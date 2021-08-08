@@ -1,0 +1,25 @@
+header#header {
+  padding: 20px 0;
+
+  .branding {
+    h3 {
+      margin: 0 !important;
+    }
+  }
+
+  .menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 3px 0;
+    ul {
+      list-style: none;
+      display: flex;
+      margin: 0 !important;
+       li {
+         margin-left: 25px;
+         font-size: 1.5rem;
+       }
+    }
+  }
+}
