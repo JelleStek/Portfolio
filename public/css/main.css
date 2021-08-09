@@ -65,6 +65,17 @@ a {
   color: inherit;
 }
 
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+
+h1, .h1 {
+  font-size: 6rem;
+  font-weight: 700;
+}
+
 header#header {
   padding: 20px 0;
 }
@@ -84,5 +95,53 @@ header#header .menu ul {
 }
 header#header .menu ul li {
   margin-left: 25px;
-  font-size: 1.5rem;
+  font-size: 1.1rem;
+  position: relative;
+  overflow-y: hidden;
+}
+header#header .menu ul li ::after {
+  content: "";
+  z-index: 2;
+  position: absolute;
+  width: 40px;
+  background: #4a5568;
+  height: 4px;
+  left: -40px;
+  bottom: -2px;
+  transition: all 0.2s;
+}
+header#header .menu ul li:hover ::after {
+  transform: translateX(40px);
+}
+header#header .menu ul li a {
+  text-decoration: none;
+}
+header#header .menu ul li.active::after {
+  content: "";
+  z-index: 2;
+  position: absolute;
+  width: 40px;
+  background: #4a5568;
+  height: 4px;
+  left: 0 !important;
+  bottom: -2px;
+}
+
+section.hero {
+  background: #fff;
+}
+section.hero .row.height {
+  height: calc(100vh - 74px);
+}
+section.hero .hero-main {
+  position: absolute;
+  bottom: 0;
+  left: -15px;
+  height: 60%;
+  width: auto;
+  z-index: 1;
+}
+
+section.about.home {
+  background-color: #f2f2f2;
 }

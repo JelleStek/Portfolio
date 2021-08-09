@@ -1873,6 +1873,14 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
+console.log('test');
+
+if (window.location.pathname == '/') {
+  $('#home').addClass('active');
+} else if (window.location.pathname == '/over-mij') {
+  $('#about').addClass('active');
+}
+
 /***/ }),
 
 /***/ "./node_modules/lodash/lodash.js":

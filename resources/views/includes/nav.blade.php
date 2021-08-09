@@ -9,10 +9,10 @@
             <div class="col-lg-9 col-6">
                 <div class="menu">
                     <ul class="menu-parent">
-                        <li class="menu-item"><a href="/">Home</a></li>
-                        <li class="menu-item"><a href="/">Over mij</a></li>
-                        <li class="menu-item"><a href="/">Portfolio</a></li>
-                        <li class="menu-item"><a href="/">Contact</a></li>
+                        <li id="home" class="menu-item"><a href="/">Home</a></li>
+                        <li id="about" class="menu-item"><a href="/">Over mij</a></li>
+                        <li id="portfolio" class="menu-item"><a href="/">Portfolio</a></li>
+                        <li id="contact" class="menu-item"><a href="/">Contact</a></li>
                     </ul>
                 </div>
             </div>
