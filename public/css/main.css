@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap);
+@import url(https://use.typekit.net/hgt5xff.css);
 @media (min-width: 1440px) {
   .container {
     max-width: 1240px !important;
@@ -49,6 +50,33 @@
   }
 }
 
+@-webkit-keyframes fade {
+  0% {
+    opacity: 0;
+    bottom: 70px;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    bottom: 20px;
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+    bottom: 70px;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    bottom: 20px;
+  }
+}
 * {
   padding: 0;
   margin: 0;
@@ -65,15 +93,28 @@ a {
   color: inherit;
 }
 
+.divider {
+  width: 150px;
+  max-width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, #2083f8 0%, rgba(0, 0, 0, 0) 100%);
+  margin-top: 5px;
+}
+
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   margin: 0;
-  font-family: "Poppins", sans-serif;
+  font-family: yantramanav, sans-serif;
   font-weight: 500;
 }
 
 h1, .h1 {
   font-size: 6rem;
-  font-weight: 700;
+  font-weight: 400;
+}
+
+h4, .h4 {
+  font-size: 2rem;
+  font-weight: 600;
 }
 
 header#header {
@@ -104,7 +145,7 @@ header#header .menu ul li ::after {
   z-index: 2;
   position: absolute;
   width: 40px;
-  background: #4a5568;
+  background: #2083f8;
   height: 4px;
   left: -40px;
   bottom: -2px;
@@ -121,7 +162,7 @@ header#header .menu ul li.active::after {
   z-index: 2;
   position: absolute;
   width: 40px;
-  background: #4a5568;
+  background: #2083f8;
   height: 4px;
   left: 0 !important;
   bottom: -2px;
@@ -133,15 +174,47 @@ section.hero {
 section.hero .row.height {
   height: calc(100vh - 74px);
 }
-section.hero .hero-main {
+section.hero .row.height .content {
+  text-align: center;
+}
+section.hero .row.height .content h1 {
+  font-size: 10rem;
+}
+section.hero .row.height .content h1 span.parent {
+  position: relative;
+  background: #fff;
+  cursor: pointer;
+}
+section.hero .row.height .content h1 span.parent:hover .child {
+  transform: translateY(0);
+  z-index: 2;
+}
+section.hero .row.height .content h1 span.child {
   position: absolute;
+  transition: all 0.2s;
+  color: #212529;
+  z-index: -1;
   bottom: 0;
-  left: -15px;
-  height: 60%;
-  width: auto;
-  z-index: 1;
+  transform: translateY(-50px);
+  font-size: 34px;
+  letter-spacing: 0.3rem;
+  left: 0;
+}
+section.hero .row.height .trigger {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+  width: 30px;
+  height: 30px;
+  border-bottom: 4px solid #212529;
+  border-right: 4px solid #212529;
+  -webkit-animation: fade 2s infinite;
+          animation: fade 2s infinite;
+  opacity: 0;
 }
 
 section.about.home {
   background-color: #f2f2f2;
+  padding: 60px 0;
 }

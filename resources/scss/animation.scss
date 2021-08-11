@@ -1,0 +1,13 @@
+@keyframes fade {
+  0% {
+    opacity: 0;
+    bottom: 70px;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    bottom: 20px
+  }
+}

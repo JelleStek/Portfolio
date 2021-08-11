@@ -1,19 +1,56 @@
 section.hero {
   background: #fff;
   .row.height {
-    height: calc(100vh - 74px)
-  }
+    height: calc(100vh - 74px);
 
-  .hero-main {
-    position: absolute;
-    bottom: 0;
-    left: -15px;
-    height: 60%;
-    width: auto;
-    z-index: 1;
+    .content {
+      text-align: center;
+
+      h1 {
+        font-size: 10rem;
+        span {
+          &.parent {
+            position: relative;
+            background: #fff;
+            cursor: pointer;
+
+            &:hover {
+              .child {
+                transform: translateY(0);
+                z-index: 2;
+              }
+            }
+          }
+          &.child {
+            position: absolute;
+            transition: all .2s;
+            color: $text-color;
+            z-index: -1;
+            bottom: 0;
+            transform: translateY(-50px);
+            font-size: 34px;
+            letter-spacing: .3rem;
+            left: 0;
+          }
+        }
+      }
+    }
+    .trigger {
+      position: absolute;
+      bottom: 30px;
+      left: 50%;
+      transform: translateX(-50%) rotate(45deg);
+      width: 30px;
+      height: 30px;
+      border-bottom: 4px solid $text-color;
+      border-right: 4px solid $text-color;
+      animation: fade 2s infinite;
+      opacity: 0;
+    }
   }
 }
 
 section.about.home {
   background-color: #f2f2f2;
+  padding: 60px 0;
 }

@@ -1,13 +1,29 @@
+$main: #2083f8;
+$gradient: linear-gradient(90deg, rgba(32, 131, 248, 1) 0%, rgba(0, 102, 222, 1) 100%);
+$divider: linear-gradient(90deg, rgba(32, 131, 248, 1) 0%, rgba(0, 0, 0, 0) 100%);
+$clip-path: polygon(50px 0, 100% 0, 100% calc(100% - 50px), calc(100% - 50px) 100%, 0 100%, 0 50px);
+$text-color: #212529;
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
+
 html, body {
   overflow-x: hidden;
   font-family: 'Poppins', sans-serif;
 }
+
 a {
   text-decoration: none;
   color: inherit;
+}
+
+.divider {
+  width: 150px;
+  max-width: 100%;
+  height: 2px;
+  background: $divider;
+  margin-top: 5px;
 }

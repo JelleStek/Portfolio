@@ -27,7 +27,7 @@ header#header {
            z-index: 2;
            position: absolute;
            width: 40px;
-           background: #4a5568;
+           background: $main;
            height: 4px;
            left: -40px;
            bottom: -2px;
@@ -46,7 +46,7 @@ header#header {
            z-index: 2;
            position: absolute;
            width: 40px;
-           background: #4a5568;
+           background: $main;
            height: 4px;
            left: 0 !important;
            bottom: -2px;
