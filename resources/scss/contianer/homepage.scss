@@ -1,31 +1,35 @@
 section.hero {
-  background: #fff;
+  background: #333;
+  overflow: hidden;
+  position: relative;
   .row.height {
-    height: calc(100vh - 74px);
+    height: 100vh;
 
     .content {
       text-align: center;
 
       h1 {
         font-size: 10rem;
+        color: #ffffff;
+        position: relative;
+        z-index: 10;
         span {
           &.parent {
             position: relative;
-            background: #fff;
             cursor: pointer;
 
             &:hover {
               .child {
                 transform: translateY(0);
-                z-index: 2;
+                opacity: 1;
               }
             }
           }
           &.child {
             position: absolute;
             transition: all .2s;
-            color: $text-color;
-            z-index: -1;
+            color: #ffffff;
+            opacity: 0;
             bottom: 0;
             transform: translateY(-50px);
             font-size: 34px;
@@ -42,10 +46,79 @@ section.hero {
       transform: translateX(-50%) rotate(45deg);
       width: 30px;
       height: 30px;
-      border-bottom: 4px solid $text-color;
-      border-right: 4px solid $text-color;
+      border-bottom: 4px solid #ffffff;
+      border-right: 4px solid #ffffff;
       animation: fade 2s infinite;
       opacity: 0;
+    }
+    .fade {
+      border-radius: 50%;
+      position: absolute;
+      filter: blur(50rem);
+
+      &.one {
+        background: #2920f8;
+        left: -750px;
+        bottom: -750px;
+        opacity: .2;
+        width: 1500px;
+        height: 1500px;
+        z-index: 5;
+      }
+      &.two {
+        background: #9520f8;
+        left: 300px;
+        bottom: -750px;
+        width: 1000px;
+        height: 1000px;
+        opacity: .3;
+        z-index: 1;
+      }
+      &.three {
+        background: #f82920;
+        right: 300px;
+        bottom: -650px;
+        width: 1200px;
+        height: 1200px;
+        opacity: .3;
+        z-index: 3;
+      }
+      &.four {
+        background: #f82083;
+        right: -400px;
+        bottom: -250px;
+        width: 900px;
+        height: 900px;
+        opacity: .3;
+        z-index: 2;
+      }
+      &.five {
+        background: #2920f8;
+        right: -400px;
+        top: -250px;
+        width: 1300px;
+        height: 1300px;
+        opacity: .3;
+        z-index: 1;
+      }
+      &.six {
+        background: #C70039 ;
+        left: -400px;
+        top: -250px;
+        width: 950px;
+        height: 950px;
+        opacity: .3;
+        z-index: 1;
+      }
+      &.seven {
+        background: $main ;
+        left: 400px;
+        top: -450px;
+        width: 1400px;
+        height: 1400px;
+        opacity: .3;
+        z-index: 1;
+      }
     }
   }
 }
@@ -53,4 +126,14 @@ section.hero {
 section.about.home {
   background-color: #f2f2f2;
   padding: 60px 0;
+
+  .image-holder.intro {
+    width: 100%;
+    position: relative;
+    margin-top: -50px;
+
+    img {
+
+    }
+  }
 }

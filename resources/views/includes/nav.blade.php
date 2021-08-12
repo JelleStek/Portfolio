@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-lg-3 col-6">
                 <div class="branding">
-                    <h3>Jelle Stekelenburg</h3>
+                    <h3>Jelle Stekelenburg<span class="highlight">.</span></h3>
                 </div>
             </div>
             <div class="col-lg-9 col-6">

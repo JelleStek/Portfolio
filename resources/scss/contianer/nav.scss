@@ -1,9 +1,23 @@
 header#header {
   padding: 20px 0;
+  background: transparent;
+  position: fixed;
+  z-index: 99999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: all .34s;
 
   .branding {
     h3 {
       margin: 0 !important;
+      color: #fff;
+    }
+  }
+  &.scroll {
+    background: rgba(255,255,255,.975);
+    h3, a {
+      color: #333333 !important;
     }
   }
 
@@ -40,6 +54,7 @@ header#header {
          }
          a {
            text-decoration: none;
+           color: #fff;
          }
          &.active::after {
            content: "";

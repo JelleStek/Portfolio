@@ -2,21 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a9dd1525-950e-4329-926d-ee046ea6c283" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/scss/animation.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Console/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Console/Kernel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/Authenticate.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/Authenticate.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/RedirectIfAuthenticated.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/RedirectIfAuthenticated.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/UserFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/UserFactory.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/scss/contianer/homepage.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/scss/contianer/homepage.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/scss/contianer/nav.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/scss/contianer/nav.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/scss/global.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/scss/global.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/scss/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/scss/main.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/scss/typography.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/scss/typography.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/includes/nav.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/includes/nav.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/CreatesApplication.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/CreatesApplication.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/nesbot/carbon/bin/carbon" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/nesbot/carbon/bin/carbon" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -198,6 +192,7 @@
       <workItem from="1628531381086" duration="4496000" />
       <workItem from="1628614028755" duration="1903000" />
       <workItem from="1628695906800" duration="4915000" />
+      <workItem from="1628792958081" duration="4091000" />
     </task>
     <servers />
   </component>
@@ -214,5 +209,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
