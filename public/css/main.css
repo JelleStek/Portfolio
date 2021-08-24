@@ -77,6 +77,22 @@
     bottom: 20px;
   }
 }
+@-webkit-keyframes hero-background {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes hero-background {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 * {
   padding: 0;
   margin: 0;
@@ -99,6 +115,7 @@ a {
   height: 2px;
   background: linear-gradient(90deg, #2083f8 0%, rgba(0, 0, 0, 0) 100%);
   margin-top: 5px;
+  margin-bottom: 30px;
 }
 
 img {
@@ -107,6 +124,18 @@ img {
 
 .highlight {
   color: #2083f8;
+}
+
+.image-box {
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.23);
+}
+.image-box img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
@@ -120,9 +149,29 @@ h1, .h1 {
   font-weight: 400;
 }
 
+h3, .h3 {
+  font-size: 2.3rem;
+  font-weight: 600;
+}
+
 h4, .h4 {
   font-size: 2rem;
   font-weight: 600;
+}
+
+p, .p {
+  font-size: 1.1rem;
+}
+
+.btn {
+  padding: 6px 20px;
+  border-radius: 999px;
+  border: 1px solid #2083f8;
+  transition: all 0.2s;
+}
+.btn:hover {
+  background: #2083f8;
+  color: #fff;
 }
 
 header#header {
@@ -138,6 +187,8 @@ header#header {
 header#header .branding h3 {
   margin: 0 !important;
   color: #fff;
+  font-size: 1.85rem;
+  font-weight: 500;
 }
 header#header.scroll {
   background: rgba(255, 255, 255, 0.975);
@@ -240,6 +291,10 @@ section.hero .row.height .trigger {
           animation: fade 2s infinite;
   opacity: 0;
 }
+section.hero .row.height .background {
+  -webkit-animation: hero-background 15s infinite;
+          animation: hero-background 15s infinite;
+}
 section.hero .row.height .fade {
   border-radius: 50%;
   position: absolute;
@@ -317,4 +372,49 @@ section.about.home .image-holder.intro {
   width: 100%;
   position: relative;
   margin-top: -50px;
+}
+section.about.home .socials ul {
+  display: flex;
+  list-style: none;
+  margin: 15px 0 0 0;
+  padding: 0;
+}
+section.about.home .socials ul li a img {
+  width: 25px;
+  transition: all 0.3s;
+}
+section.about.home .socials ul li:first-child {
+  margin-right: 10px;
+}
+section.about.home .socials ul li :hover img {
+  opacity: 0.8;
+}
+
+section.portfolio {
+  margin: 50px 0;
+}
+section.portfolio .title {
+  margin-bottom: 150px;
+}
+section.portfolio .portfolio-item {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+}
+section.portfolio .portfolio-item img {
+  height: 250px;
+  border-radius: 20px;
+  margin-top: -125px;
+  transition: all 0.2s;
+}
+section.portfolio .portfolio-item .__title {
+  margin-top: 15px;
+}
+section.portfolio .portfolio-item .__title h4 {
+  font-size: 2.25rem;
+}
+section.portfolio .portfolio-item .__title .divider {
+  margin-bottom: 15px;
+  margin-top: 0;
 }

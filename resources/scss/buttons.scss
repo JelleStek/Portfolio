@@ -1,0 +1,11 @@
+.btn {
+  padding: 6px 20px;
+  border-radius: 999px;
+  border: 1px solid $main;
+  transition: all .2s;
+
+  &:hover {
+    background: $main;
+    color: #fff;
+  }
+}

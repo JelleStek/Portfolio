@@ -2,6 +2,7 @@ section.hero {
   background: #333;
   overflow: hidden;
   position: relative;
+
   .row.height {
     height: 100vh;
 
@@ -13,6 +14,7 @@ section.hero {
         color: #ffffff;
         position: relative;
         z-index: 10;
+
         span {
           &.parent {
             position: relative;
@@ -25,6 +27,7 @@ section.hero {
               }
             }
           }
+
           &.child {
             position: absolute;
             transition: all .2s;
@@ -39,6 +42,7 @@ section.hero {
         }
       }
     }
+
     .trigger {
       position: absolute;
       bottom: 30px;
@@ -51,6 +55,11 @@ section.hero {
       animation: fade 2s infinite;
       opacity: 0;
     }
+
+    .background {
+      animation: hero-background 15s infinite;
+    }
+
     .fade {
       border-radius: 50%;
       position: absolute;
@@ -65,6 +74,7 @@ section.hero {
         height: 1500px;
         z-index: 5;
       }
+
       &.two {
         background: #9520f8;
         left: 300px;
@@ -74,6 +84,7 @@ section.hero {
         opacity: .3;
         z-index: 1;
       }
+
       &.three {
         background: #f82920;
         right: 300px;
@@ -83,6 +94,7 @@ section.hero {
         opacity: .3;
         z-index: 3;
       }
+
       &.four {
         background: #f82083;
         right: -400px;
@@ -92,6 +104,7 @@ section.hero {
         opacity: .3;
         z-index: 2;
       }
+
       &.five {
         background: #2920f8;
         right: -400px;
@@ -101,8 +114,9 @@ section.hero {
         opacity: .3;
         z-index: 1;
       }
+
       &.six {
-        background: #C70039 ;
+        background: #C70039;
         left: -400px;
         top: -250px;
         width: 950px;
@@ -110,8 +124,9 @@ section.hero {
         opacity: .3;
         z-index: 1;
       }
+
       &.seven {
-        background: $main ;
+        background: $main;
         left: 400px;
         top: -450px;
         width: 1400px;
@@ -131,9 +146,61 @@ section.about.home {
     width: 100%;
     position: relative;
     margin-top: -50px;
+  }
+
+  .socials {
+    ul {
+      display: flex;
+      list-style: none;
+      margin: 15px 0 0 0;
+      padding: 0;
+      li {
+        a {
+          img {
+            width: 25px;
+            transition: all .3s;
+          }
+        }
+        &:first-child {
+          margin-right: 10px;
+        }
+        :hover {
+          img {
+            opacity: .8;
+          }
+        }
+      }
+    }
+  }
+}
+section.portfolio {
+  margin: 50px 0;
+
+  .title {
+    margin-bottom: 150px;
+  }
+
+  .portfolio-item {
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(0,0,0,.2);
+    padding: 20px;
 
     img {
-
+      height: 250px;
+      border-radius: 20px;
+      margin-top: -125px;
+      transition: all .2s;
+    }
+    .__title {
+      margin-top: 15px;
+      h4 {
+        font-size: 2.25rem;
+      }
+      .divider {
+        margin-bottom: 15px;
+        margin-top: 0;
+      }
     }
   }
 }
