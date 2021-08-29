@@ -418,3 +418,22 @@ section.portfolio .portfolio-item .__title .divider {
   margin-bottom: 15px;
   margin-top: 0;
 }
+section.portfolio .portfolio-item .__body p {
+  overflow: hidden;
+  text-overflow: ellipsiss;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+section.cta {
+  padding: 40px 0;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+section.cta h2 {
+  font-size: 60px;
+  font-weight: 800;
+  line-height: 55px;
+  margin-bottom: 20px;
+}

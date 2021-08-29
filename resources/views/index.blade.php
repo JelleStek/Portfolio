@@ -90,7 +90,7 @@
                         </div>
                         <div class="__body">
                             <p>nwave is een kleinschalig bedrijf van vrienden en mij waardoor wij freelance werk kunnen
-                                doen voor diferse klanten</p>
+                                doen voor diverse klanten.</p>
                             <a class="btn" href="">Lees meer</a>
                         </div>
                     </div>
@@ -112,6 +112,17 @@
                     </div>
                 </div>
 
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-12">
+                    <h2>Heeft u vragen? neem contact op</h2>
+                    <a href="" class="btn">contact</a>
+                </div>
             </div>
         </div>
     </section>

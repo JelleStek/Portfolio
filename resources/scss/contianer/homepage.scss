@@ -202,5 +202,14 @@ section.portfolio {
         margin-top: 0;
       }
     }
+    .__body {
+      p {
+        overflow: hidden;
+        text-overflow: ellipsiss;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+      }
+    }
   }
 }
