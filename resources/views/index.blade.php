@@ -9,6 +9,7 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="content">
+                                <img src="{{asset('/images/homepage/intro.png')}}" alt="">
                                 <h1>Jelle <span class="parent">Stek <span class="child">elenburg</span></span></h1>
                             </div>
                         </div>
@@ -30,11 +31,6 @@
 
     <section class="about home">
         <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-6">
-                    <div class="image-holder intro"><img src="{{asset('/images/homepage/intro.png')}}" alt=""></div>
-                </div>
-            </div>
             <div class="mt-5"></div>
             <div class="row align-items-center">
                 <div class="col-lg-6 col-12">
@@ -82,7 +78,7 @@
                 <div class="col-lg-4">
                     <div class="portfolio-item">
                         <div class="__img">
-                            <img src="{{asset('/images/portfolio/nwave.jpg')}}" alt="">
+                            <div class="header" style="background-image: url('{{asset('/images/portfolio/nwave.jpg')}}')"></div>
                         </div>
                         <div class="__title">
                             <h4>nwave</h4>
@@ -99,7 +95,7 @@
                 <div class="col-lg-4">
                     <div class="portfolio-item">
                         <div class="__img">
-                            <img src="{{asset('/images/portfolio/ian.jpg')}}" alt="">
+                            <div class="header" style="background-image: url('{{asset('/images/portfolio/ian.jpg')}}')"></div>
                         </div>
                         <div class="__title">
                             <h4>Ian remeijsen</h4>
@@ -112,16 +108,32 @@
                     </div>
                 </div>
 
+                <div class="col-lg-4">
+                    <div class="portfolio-item">
+                        <div class="__img">
+                            <div class="header" style="background-image: url('{{asset('/images/portfolio/pass.jpg')}}')"></div>
+                        </div>
+                        <div class="__title">
+                            <h4>Passgenerator</h4>
+                            <div class="divider"></div>
+                        </div>
+                        <div class="__body">
+                            <p>Veiligheid op het internet is een belangrijk iets naar mijn mening, hierdoor heb ik een veilige opensource Wachwoord generator gemaakt.</p>
+                            <a class="btn" href="">Lees meer</a>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
 
-    <section class="cta">
+    <section class="cta" style="background-image: url('{{asset('images/global/cta.jpg')}}')">
         <div class="container">
             <div class="row">
-                <div class="col-lg-3 col-12">
+                <div class="col-lg-5 col-12">
                     <h2>Heeft u vragen? neem contact op</h2>
-                    <a href="" class="btn">contact</a>
+                    <a href="" class="btn white">contact</a>
                 </div>
             </div>
         </div>

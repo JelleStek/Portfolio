@@ -8,6 +8,13 @@ section.hero {
 
     .content {
       text-align: center;
+      position: relative;
+      z-index: 100;
+
+      img {
+        max-width: 600px;
+        margin-bottom: -30px;
+      }
 
       h1 {
         font-size: 10rem;
@@ -56,9 +63,6 @@ section.hero {
       opacity: 0;
     }
 
-    .background {
-      animation: hero-background 15s infinite;
-    }
 
     .fade {
       border-radius: 50%;
@@ -142,12 +146,6 @@ section.about.home {
   background-color: #f2f2f2;
   padding: 60px 0;
 
-  .image-holder.intro {
-    width: 100%;
-    position: relative;
-    margin-top: -50px;
-  }
-
   .socials {
     ul {
       display: flex;
@@ -186,9 +184,12 @@ section.portfolio {
     box-shadow: 0 0 15px rgba(0,0,0,.2);
     padding: 20px;
 
-    img {
+    img, .header {
       height: 250px;
       border-radius: 20px;
+      overflow: hidden;
+      background-position: center;
+      background-size: cover;
       margin-top: -125px;
       transition: all .2s;
     }
