@@ -16,5 +16,14 @@
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="{{asset('/js/main.js')}}"></script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NXH5Q98JD4"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-NXH5Q98JD4');
+</script>
 </body>
 </html>
