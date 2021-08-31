@@ -253,6 +253,8 @@ section.hero {
   background: #333;
   overflow: hidden;
   position: relative;
+  background-size: cover;
+  background-position: center;
 }
 section.hero .row.height {
   height: 100vh;
@@ -303,74 +305,6 @@ section.hero .row.height .trigger {
   -webkit-animation: fade 2s infinite;
           animation: fade 2s infinite;
   opacity: 0;
-}
-section.hero .row.height .fade {
-  border-radius: 50%;
-  position: absolute;
-  filter: blur(50rem);
-}
-section.hero .row.height .fade.one {
-  background: #2920f8;
-  left: -750px;
-  bottom: -750px;
-  opacity: 0.2;
-  width: 1500px;
-  height: 1500px;
-  z-index: 5;
-}
-section.hero .row.height .fade.two {
-  background: #9520f8;
-  left: 300px;
-  bottom: -750px;
-  width: 1000px;
-  height: 1000px;
-  opacity: 0.3;
-  z-index: 1;
-}
-section.hero .row.height .fade.three {
-  background: #f82920;
-  right: 300px;
-  bottom: -650px;
-  width: 1200px;
-  height: 1200px;
-  opacity: 0.3;
-  z-index: 3;
-}
-section.hero .row.height .fade.four {
-  background: #f82083;
-  right: -400px;
-  bottom: -250px;
-  width: 900px;
-  height: 900px;
-  opacity: 0.3;
-  z-index: 2;
-}
-section.hero .row.height .fade.five {
-  background: #2920f8;
-  right: -400px;
-  top: -250px;
-  width: 1300px;
-  height: 1300px;
-  opacity: 0.3;
-  z-index: 1;
-}
-section.hero .row.height .fade.six {
-  background: #C70039;
-  left: -400px;
-  top: -250px;
-  width: 950px;
-  height: 950px;
-  opacity: 0.3;
-  z-index: 1;
-}
-section.hero .row.height .fade.seven {
-  background: #2083f8;
-  left: 400px;
-  top: -450px;
-  width: 1400px;
-  height: 1400px;
-  opacity: 0.3;
-  z-index: 1;
 }
 
 section.about.home {

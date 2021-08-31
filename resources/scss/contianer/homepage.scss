@@ -2,6 +2,8 @@ section.hero {
   background: #333;
   overflow: hidden;
   position: relative;
+  background-size: cover;
+  background-position: center;
 
   .row.height {
     height: 100vh;
@@ -61,83 +63,6 @@ section.hero {
       border-right: 4px solid #ffffff;
       animation: fade 2s infinite;
       opacity: 0;
-    }
-
-
-    .fade {
-      border-radius: 50%;
-      position: absolute;
-      filter: blur(50rem);
-
-      &.one {
-        background: #2920f8;
-        left: -750px;
-        bottom: -750px;
-        opacity: .2;
-        width: 1500px;
-        height: 1500px;
-        z-index: 5;
-      }
-
-      &.two {
-        background: #9520f8;
-        left: 300px;
-        bottom: -750px;
-        width: 1000px;
-        height: 1000px;
-        opacity: .3;
-        z-index: 1;
-      }
-
-      &.three {
-        background: #f82920;
-        right: 300px;
-        bottom: -650px;
-        width: 1200px;
-        height: 1200px;
-        opacity: .3;
-        z-index: 3;
-      }
-
-      &.four {
-        background: #f82083;
-        right: -400px;
-        bottom: -250px;
-        width: 900px;
-        height: 900px;
-        opacity: .3;
-        z-index: 2;
-      }
-
-      &.five {
-        background: #2920f8;
-        right: -400px;
-        top: -250px;
-        width: 1300px;
-        height: 1300px;
-        opacity: .3;
-        z-index: 1;
-      }
-
-      &.six {
-        background: #C70039;
-        left: -400px;
-        top: -250px;
-        width: 950px;
-        height: 950px;
-        opacity: .3;
-        z-index: 1;
-      }
-
-      &.seven {
-        background: $main;
-        left: 400px;
-        top: -450px;
-        width: 1400px;
-        height: 1400px;
-        opacity: .3;
-        z-index: 1;
-      }
     }
   }
 }

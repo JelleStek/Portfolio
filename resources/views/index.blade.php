@@ -2,25 +2,16 @@
 
 @section('content')
 
-    <section class="hero">
+    <section class="hero" style="background-image: url('{{asset('/images/homepage/hero.jpg')}}')">
         <div class="container">
             <div class="row height align-items-center justify-content-center">
                 <div class="col-12">
                     <div class="row">
                         <div class="col-12">
                             <div class="content">
-                                <img src="{{asset('/images/homepage/intro.png')}}" alt="">
+{{--                                <img src="{{asset('/images/homepage/intro.png')}}" alt="">--}}
                                 <h1>Jelle <span class="parent">Stek <span class="child">elenburg</span></span></h1>
                             </div>
-                        </div>
-                        <div class="background">
-                            <div class="fade one"></div>
-                            <div class="fade two"></div>
-                            <div class="fade three"></div>
-                            <div class="fade four"></div>
-                            <div class="fade five"></div>
-                            <div class="fade six"></div>
-                            <div class="fade seven"></div>
                         </div>
                         <div class="trigger"></div>
                     </div>
@@ -128,15 +119,5 @@
         </div>
     </section>
 
-    <section class="cta" style="background-image: url('{{asset('images/global/cta.jpg')}}')">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-5 col-12">
-                    <h2>Heeft u vragen? neem contact op</h2>
-                    <a href="" class="btn white">contact</a>
-                </div>
-            </div>
-        </div>
-    </section>
 
 @endsection
