@@ -372,6 +372,7 @@ section.cta {
   margin: 60px 0;
   background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 section.cta h2 {

@@ -119,5 +119,6 @@
         </div>
     </section>
 
+    @include('includes/cta')
 
 @endsection
