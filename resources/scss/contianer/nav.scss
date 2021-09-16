@@ -8,6 +8,7 @@ header#header {
   width: 100%;
   transition: all .34s;
 
+
   .branding {
     h3 {
       margin: 0 !important;
@@ -17,10 +18,16 @@ header#header {
     }
   }
   &.scroll {
-    background: rgba(255,255,255,.975);
+    background: rgba(255,255,255,.3);
+    backdrop-filter: blur(.8rem);
+    -webkit-backdrop-filter: blur(.8rem);
+    box-shadow: 0 0 5px rgba(0,0,0,.2);
     h3, a {
       color: #333333 !important;
     }
+  }
+  h3, a {
+    color: #333333 !important;
   }
 
   .menu {

@@ -1,5 +1,6 @@
 @import url(https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap);
 @import url(https://use.typekit.net/hgt5xff.css);
+@import url(https://fonts.googleapis.com/css2?family=Podkova:wght@400;500;600;700;800&display=swap);
 @media (min-width: 1440px) {
   .container {
     max-width: 1240px !important;
@@ -102,6 +103,7 @@
 html, body {
   overflow-x: hidden;
   font-family: "Poppins", sans-serif;
+  color: #154884;
 }
 
 a {
@@ -123,7 +125,7 @@ img {
 }
 
 .highlight {
-  color: #2083f8;
+  color: #154884;
 }
 
 .image-box {
@@ -138,39 +140,42 @@ img {
   height: 100%;
 }
 
+.uppercase {
+  text-transform: uppercase;
+  opacity: 0.7;
+}
+
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   margin: 0;
-  font-family: yantramanav, sans-serif;
-  font-weight: 500;
+  font-family: "Podkova", serif;
+  font-weight: 400;
 }
 
 h1, .h1 {
-  font-size: 6rem;
-  font-weight: 400;
+  font-size: 4rem;
 }
 
 h3, .h3 {
   font-size: 2.3rem;
-  font-weight: 600;
 }
 
 h4, .h4 {
   font-size: 2rem;
-  font-weight: 600;
 }
 
 p, .p {
   font-size: 1.1rem;
+  font-weight: 300;
 }
 
 .btn {
   padding: 6px 20px;
   border-radius: 999px;
-  border: 1px solid #2083f8;
+  border: 1px solid #154884;
   transition: all 0.2s;
 }
 .btn:hover {
-  background: #2083f8;
+  background: #154884;
   color: #fff;
 }
 .btn.white {
@@ -198,9 +203,15 @@ header#header .branding h3 {
   font-weight: 500;
 }
 header#header.scroll {
-  background: rgba(255, 255, 255, 0.975);
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(0.8rem);
+  -webkit-backdrop-filter: blur(0.8rem);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 header#header.scroll h3, header#header.scroll a {
+  color: #333333 !important;
+}
+header#header h3, header#header a {
   color: #333333 !important;
 }
 header#header .menu {
@@ -225,7 +236,7 @@ header#header .menu ul li ::after {
   z-index: 2;
   position: absolute;
   width: 40px;
-  background: #2083f8;
+  background: #154884;
   height: 4px;
   left: -40px;
   bottom: -2px;
@@ -243,128 +254,78 @@ header#header .menu ul li.active::after {
   z-index: 2;
   position: absolute;
   width: 40px;
-  background: #2083f8;
+  background: #154884;
   height: 4px;
   left: 0 !important;
   bottom: -2px;
 }
 
 section.hero {
-  background: #333;
-  overflow: hidden;
+  padding: 150px 0 100px 0;
+  overflow: visible;
+}
+section.hero p {
+  padding: 20px 0;
+  font-size: 1.3rem;
+}
+section.hero .box-image {
   position: relative;
-  background-size: cover;
-  background-position: center;
+  margin-top: 80px;
 }
-section.hero .row.height {
-  height: 100vh;
+section.hero .box-image img {
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.35);
 }
-section.hero .row.height .content {
-  text-align: center;
-  position: relative;
-  z-index: 100;
-}
-section.hero .row.height .content img {
-  max-width: 600px;
-  margin-bottom: -30px;
-}
-section.hero .row.height .content h1 {
-  font-size: 10rem;
-  color: #ffffff;
-  position: relative;
-  z-index: 10;
-}
-section.hero .row.height .content h1 span.parent {
-  position: relative;
-  cursor: pointer;
-}
-section.hero .row.height .content h1 span.parent:hover .child {
-  transform: translateY(0);
-  opacity: 1;
-}
-section.hero .row.height .content h1 span.child {
+section.hero .box-image::before, section.hero .box-image::after {
+  content: "";
+  border-radius: 50%;
   position: absolute;
-  transition: all 0.2s;
-  color: #ffffff;
-  opacity: 0;
-  bottom: 0;
-  transform: translateY(-50px);
-  font-size: 34px;
-  letter-spacing: 0.3rem;
+  filter: blur(5rem);
+  z-index: -1;
+}
+section.hero .box-image::before {
+  width: 700px;
+  height: 700px;
+  left: -15%;
+  top: -15%;
+  background-image: linear-gradient(90deg, #edff7e 0%, #7fefea 100%);
+}
+section.hero .box-image::after {
+  background: #7fefea;
+  background: linear-gradient(170deg, #7fefea 0%, #0093e9 100%);
+  width: 600px;
+  height: 600px;
+  right: -8%;
+  bottom: -6%;
+}
+
+section.intro {
+  padding: 70px 0;
+  position: relative;
+  overflow: hidden;
+}
+section.intro .intro-text {
+  padding-top: 30px;
+}
+section.intro::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -450px;
+  z-index: -1;
+  width: 200%;
+  padding-bottom: 200%;
+  background: #f5f6f9;
+  border-radius: 50%;
+}
+section.intro::after {
+  content: "";
+  position: absolute;
+  background: #f5f6f9;
+  top: 600px;
   left: 0;
-}
-section.hero .row.height .trigger {
-  position: absolute;
-  bottom: 30px;
-  left: 50%;
-  transform: translateX(-50%) rotate(45deg);
-  width: 30px;
-  height: 30px;
-  border-bottom: 4px solid #ffffff;
-  border-right: 4px solid #ffffff;
-  -webkit-animation: fade 2s infinite;
-          animation: fade 2s infinite;
-  opacity: 0;
-}
-
-section.about.home {
-  background-color: #f2f2f2;
-  padding: 60px 0;
-}
-section.about.home .socials ul {
-  display: flex;
-  list-style: none;
-  margin: 15px 0 0 0;
-  padding: 0;
-}
-section.about.home .socials ul li a img {
-  width: 25px;
-  transition: all 0.3s;
-}
-section.about.home .socials ul li:first-child {
-  margin-right: 10px;
-}
-section.about.home .socials ul li :hover img {
-  opacity: 0.8;
-}
-
-section.portfolio {
-  margin: 50px 0;
-}
-section.portfolio .title {
-  margin-bottom: 150px;
-}
-section.portfolio .portfolio-item {
-  background: #fff;
-  border-radius: 20px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-  padding: 20px;
-}
-section.portfolio .portfolio-item img, section.portfolio .portfolio-item .header {
-  height: 250px;
-  border-radius: 20px;
-  overflow: hidden;
-  background-position: center;
-  background-size: cover;
-  margin-top: -125px;
-  transition: all 0.2s;
-}
-section.portfolio .portfolio-item .__title {
-  margin-top: 15px;
-}
-section.portfolio .portfolio-item .__title h4 {
-  font-size: 2.25rem;
-}
-section.portfolio .portfolio-item .__title .divider {
-  margin-bottom: 15px;
-  margin-top: 0;
-}
-section.portfolio .portfolio-item .__body p {
-  overflow: hidden;
-  text-overflow: ellipsiss;
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
+  width: 100%;
+  height: calc(100% - 600px);
 }
 
 section.cta {
