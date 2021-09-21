@@ -20,7 +20,7 @@ section.hero {
       content: "";
       border-radius: 50%;
       position: absolute;
-      filter: blur(5rem);
+      filter: blur(10rem);
       z-index: -1;
     }
     &::before {
@@ -46,10 +46,6 @@ section.intro {
   position: relative;
   overflow: hidden;
 
-  .intro-text {
-    padding-top: 30px;
-  }
-
   &::before {
     content: "";
     position: absolute;
@@ -69,5 +65,15 @@ section.intro {
     left: 0;
     width: 100%;
     height: calc(100% - 600px);
+    z-index: -1;
+  }
+  @media only screen and (min-width: 1800px) {
+    &::before {
+      content: none !important;
+    }
+    &::after {
+      top: 0 !important;
+      height: 100% !important;
+    }
   }
 }
