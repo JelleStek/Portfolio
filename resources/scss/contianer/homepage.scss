@@ -1,12 +1,24 @@
 section.hero {
   padding: 150px 0 100px 0;
   overflow: visible;
-
+  .hero-title {
+    display: inline-block;
+    .h1,h1 {
+      display: inline-block;
+    }
+    span.space {
+      display: inline-block;
+    }
+  }
   p {
     padding: 20px 0;
     font-size: 1.3rem;
   }
-
+  @media only screen and (max-width: 1200px) {
+    p {
+      font-size: 1rem;
+    }
+  }
   .box-image {
     position: relative;
     margin-top: 80px;
@@ -68,6 +80,15 @@ section.intro {
     z-index: -1;
   }
   @media only screen and (min-width: 1800px) {
+    &::before {
+      content: none !important;
+    }
+    &::after {
+      top: 0 !important;
+      height: 100% !important;
+    }
+  }
+  @media only screen and (max-width: 800px) {
     &::before {
       content: none !important;
     }

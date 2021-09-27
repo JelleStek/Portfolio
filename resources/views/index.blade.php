@@ -5,8 +5,8 @@
     <section class="hero">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-9 text-center">
-                    <h1>Hoi! Ik ben Jelle Stekelenburg, een developer in de Amsterdam regio</h1>
+                <div class="col-lg-9 col-12 text-center">
+                    <div class="hero-title"><h2 class="h1">Hoi! Ik ben <span class="space"></span></h2><h1>Jelle Stekelenburg,</h1><span class="space"></span><h2 class="h1"> een developer in de Amsterdam regio</h2></div>
                     <p>Ik ben een 1e jaar HBO student met meer dan 3 jaar ervaring.</p>
 
                     <div class="box-image">
@@ -50,7 +50,8 @@
                     <div class="content">
                         <p class="mini-title">Javascript</p>
                         <h3>Javascript & Jquery</h3>
-                        <p>Sinds het begin van mijn eerste studie als <a class="pull-out">mediadeveloper<span>Een opleiding op het Mediacollege Amsterdam die ik van 2018 t/m 2021 heb gevolgd</span></a> ben ik bezig geweest met javascript
+                        <p>Sinds het begin van mijn eerste studie als <a class="pull-out">mediadeveloper<span>Een opleiding op het Mediacollege Amsterdam die ik van 2018 t/m 2021 heb gevolgd en afgerond.</span></a>
+                            ben ik bezig geweest met javascript
                             en jquery. Voor mij is het belangrijk een website zo gebruiksvriendelijk te maken en
                             technieken toe te voegen die niet via html & css geïmplementeerd kunnen worden. Ookal heb ik
                             nog veel te leren kan ik al aardig wat binnen javascript en jquery.</p>
