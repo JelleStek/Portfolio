@@ -1,6 +1,120 @@
 @import url(https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap);
 @import url(https://use.typekit.net/hgt5xff.css);
 @import url(https://fonts.googleapis.com/css2?family=Podkova:wght@400;500;600;700;800&display=swap);
+.loader {
+  position: absolute;
+  background: #fff;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+.loader .loader__child {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 30px;
+}
+.loader .loader__child::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  padding-top: 100%;
+  border-radius: 50%;
+  background-image: conic-gradient(#154884 20%, white -80%);
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-animation: spin 1s infinite;
+          animation: spin 1s infinite;
+}
+.loader .loader__child::after {
+  content: "";
+  position: absolute;
+  width: calc(100% - 20px);
+  padding-top: calc(100% - 20px);
+  background: #fff;
+  border-radius: 50%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.loader .loader__child h4 {
+  color: #000000;
+  position: relative;
+  z-index: 100;
+}
+.loader .loader__child h4 span.punt {
+  color: #154884;
+  position: absolute;
+  -webkit-animation: punt 1s infinite;
+          animation: punt 1s infinite;
+}
+.loader.hidden {
+  -webkit-animation: hidden 0.5s;
+          animation: hidden 0.5s;
+}
+.loader.hide {
+  display: none;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+@-webkit-keyframes punt {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes punt {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@-webkit-keyframes hidden {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes hidden {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 @media (min-width: 1440px) {
   .container {
     max-width: 1240px !important;

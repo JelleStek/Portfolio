@@ -1891,6 +1891,19 @@ if (window.location.pathname == '/') {
   $('#about').addClass('active');
 }
 
+function triggerDisplay() {
+  $('#loader').addClass('test');
+}
+
+var goToTop = function goToTop() {
+  return window.scrollTo(0, 0);
+}; //demo - moet nog een to top element maken in de website
+// let main = document.getElementById('main');
+// main.addEventListener('click', () => {
+//     goToTop();
+//     console.log('test')
+// })
+
 /***/ }),
 
 /***/ "./node_modules/lodash/lodash.js":

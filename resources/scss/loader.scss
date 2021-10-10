@@ -1,0 +1,88 @@
+.loader {
+  position: absolute;
+  background: #fff;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+
+  .loader__child {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      padding-top: 100%;
+      border-radius: 50%;
+      background-image: conic-gradient(#154884 20%,white -80%);
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      animation: spin 1s infinite;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      width: calc(100% - 20px);
+      padding-top: calc(100% - 20px);
+      background: #fff;
+      border-radius: 50%;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    h4 {
+      color: #000000;
+      position: relative;
+      z-index: 100;
+
+      span.punt {
+        color: #154884;
+        position: absolute;
+        animation: punt 1s infinite;
+      }
+    }
+  }
+
+  &.hidden {
+    animation: hidden .5s;
+  }
+  &.hide {
+    display: none;
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+@keyframes punt {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes hidden {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

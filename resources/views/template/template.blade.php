@@ -9,11 +9,17 @@
     <title>Portfolio - Jelle Stekelenburg</title>
 </head>
 <body>
+<div class="loader" id="loader">
+    <div class="loader__child">
+        <h4>Jelle Stekelenburg<span class="punt">.</span></h4>
+    </div>
+</div>
+<main id="main" v-cloak>
 
-@include('includes/nav')
+    @include('includes/nav')
 
-@yield('content')
-
+    @yield('content')
+</main>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="{{asset('/js/main.js')}}"></script>
 
@@ -24,6 +30,28 @@
     gtag('js', new Date());
 
     gtag('config', 'G-NXH5Q98JD4');
+</script>
+<script src="https://unpkg.com/vue@next"></script>
+<script>
+    let app = Vue.createApp({
+        data: function() {
+            return {
+                greeting: 'Hello Vue 3',
+                isVisible: true
+            }
+        },
+        mounted: () => {
+            let loader = document.getElementById('loader');
+            loader.classList.add('hidden');
+            triggerDisplay();
+        },
+    })
+    app.mount('#main')
+
+    function triggerDisplay() {
+        let loader = document.getElementById('loader');
+        setTimeout(function(){ loader.classList.add('hide'); }, 500);
+    };
 </script>
 </body>
 </html>
