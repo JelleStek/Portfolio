@@ -20,13 +20,15 @@
     @include('includes/nav')
 
     @yield('content')
+    <div id="goUp">
+        <img src="{{asset('/images/global/up-arrow.png')}}" alt="">
+    </div>
 </main>
 <script src="https://unpkg.com/vue@next"></script>
 <script>
     let app = Vue.createApp({
         data: function() {
             return {
-                greeting: 'Hello Vue 3',
                 isVisible: true
             }
         },

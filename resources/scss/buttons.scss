@@ -1,17 +1,40 @@
 .btn {
   padding: 6px 20px;
+  display: inline-block;
   border-radius: 999px;
   border: 1px solid $main;
   transition: all .2s;
+  background: transparent;
+  position: relative;
+  overflow: hidden !important;
 
   &:hover {
+    overflow: hidden;
+    box-shadow: 0 0 6px rgba(0,0,0,.2);
+
+    &::after {
+      transform: translate(0, 0);
+    }
+  }
+
+  &::after {
+    display: block;
+    content: "";
+    width: 100px;
+    height: 100px;
     background: $main;
-    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-100px, -100px);
+    transition: all .2s;
+    z-index: -1;
   }
 
   &.white {
     color: #fff !important;
     border-color: #fff !important;
+    overflow: hidden;
 
     &:hover {
       color: #fff;
@@ -19,6 +42,8 @@
   }
 }
 
+
+//pull out button
 a.pull-out {
   text-decoration: underline;
   position: relative;
@@ -29,7 +54,7 @@ a.pull-out {
     z-index: 3;
     padding: 15px;
     background: #fff;
-    box-shadow: 0 0 10px rgba(0,0,0,.2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
     bottom: calc(100% + 10px);
     left: 50%;
     transform: translateX(-50%);
@@ -48,21 +73,26 @@ a.pull-out {
       transform: translateX(-50%) rotate(45deg);
     }
   }
+
   &:hover {
     color: $main;
     cursor: pointer;
+
     span {
       display: block;
     }
   }
+
   span:hover {
     display: block;
   }
 }
+
 @media only screen and (max-width: 972px) {
   a.pull-out {
     text-decoration: none;
     cursor: none;
+
     &:hover {
       span {
         display: none !important;

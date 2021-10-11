@@ -20,16 +20,18 @@ if (window.location.pathname == '/') {
 }
 
 
-function triggerDisplay() {
-    $('#loader').addClass('test')
-}
-
 const goToTop = () => window.scrollTo(0,0);
 
-//demo - moet nog een to top element maken in de website
+let gpUp = document.getElementById('goUp');
+gpUp.addEventListener('click', () => {
+    goToTop();
+})
 
-// let main = document.getElementById('main');
-// main.addEventListener('click', () => {
-//     goToTop();
-//     console.log('test')
-// })
+console.log(document.body.clientWidth);
+
+(function() {
+    if(document.body.clientWidth < 950) {
+        $('#header').addClass('mobile')
+    }
+})();
+//moet automatisch updaten, is nog niet zo.
