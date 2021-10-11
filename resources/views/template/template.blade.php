@@ -42,7 +42,7 @@
 
     function triggerDisplay() {
         let loader = document.getElementById('loader');
-        setTimeout(function(){ loader.classList.add('hide'); }, 500);
+        setTimeout( () => { loader.classList.add('hide'); }, 500);
     }
 </script>
 <script defer src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
