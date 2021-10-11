@@ -191,6 +191,11 @@ img.box-image {
   transition: all 0.35s;
 }
 
+@media only screen and (max-width: 950px) {
+  #goUp {
+    display: none !important;
+  }
+}
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   margin: 0;
   font-family: "Podkova", serif;
@@ -326,7 +331,7 @@ header#header .branding h3 {
   font-size: 1.85rem;
   font-weight: 500;
 }
-@media only screen and (max-width: 70rem) {
+@media only screen and (max-width: 950px) {
   header#header .branding h3 {
     font-size: 1.5rem;
   }
@@ -606,7 +611,7 @@ section.cta .content h2 {
   margin-bottom: 20px;
   color: #fff;
 }
-@media only screen and (max-width: 70rem) {
+@media only screen and (max-width: 950px) {
   section.cta .content h2 {
     font-size: 30px;
     line-height: 27px;
