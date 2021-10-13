@@ -48,3 +48,7 @@ $('#hamburger-toggle').on('click', () => {
     $('aside#menu').toggleClass('toggle');
     $('#hamburger-toggle span').toggleClass('toggle');
 })
+
+switch (window.location.pathname) {
+    case "/": $('body').addClass('home'); break;
+}

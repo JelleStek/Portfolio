@@ -1920,6 +1920,12 @@ $('#hamburger-toggle').on('click', function () {
   $('#hamburger-toggle span').toggleClass('toggle');
 });
 
+switch (window.location.pathname) {
+  case "/":
+    $('body').addClass('home');
+    break;
+}
+
 /***/ }),
 
 /***/ "./node_modules/lodash/lodash.js":
