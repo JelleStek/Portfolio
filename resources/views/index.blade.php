@@ -21,7 +21,7 @@
             <div class="row justify-content-center">
                 <div class="col-9 text-center">
                     <h5 class="uppercase">Wat doe ik?</h5>
-                    <h3>Mijn main skills</h3>
+                    <h2>Mijn main skills<span class="punt">.</span></h2>
                 </div>
                 <div class="col-9 text-center">
                     <div class="intro-text">
@@ -54,7 +54,7 @@
                             ben ik bezig geweest met javascript
                             en jquery. Voor mij is het belangrijk een website zo gebruiksvriendelijk te maken en
                             technieken toe te voegen die niet via html & css geïmplementeerd kunnen worden. Ookal heb ik
-                            nog veel te leren kan ik al aardig wat binnen javascript en jquery.</p>
+                            nog veel te leren kan ik al aardig mijn weg vinden binnen javascript en jquery.</p>
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -64,6 +64,39 @@
         </div>
     </section>
 
-    @include('includes.cta')
+    @include('includes.cta');
+
+    <section class="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2>Mijn laatste werk<span class="punt">.</span></h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-4 col-md-6 col-12">
+                    <div class="portfolio__item">
+                        <div class="__header">
+                            <img src="{{asset('/images/portfolio/nwave.jpg')}}" alt="nwave portfolio item">
+                            <a href="" class="btn portfolio">Lees meer</a>
+                        </div>
+                        <div class="__body">
+                            <h3>nwave</h3>
+                            <p class="short-description">nwave is de eenmans zaak op mijn naam. Via deze manier kan ik freelance werk doen. Website heeft services</p>
+                            <div class="tags">
+                                <p class="mini-title">laravel</p>
+                                <p class="mini-title">sass</p>
+                                <p class="mini-title">javascript</p>
+                                <p class="mini-title">jquery</p>
+                            </div>
+                            <div class="mobile">
+                                <a href="" class="btn">Lees meer</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 @endsection

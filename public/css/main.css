@@ -157,9 +157,11 @@ img.box-image {
 .mini-title {
   background: #e5e5e5;
   display: inline-block;
-  padding: 3px 10px;
+  padding: 3px 14px;
   border-radius: 999px;
   margin-bottom: 0;
+  margin-right: 10px;
+  margin-top: 10px;
 }
 
 .content {
@@ -206,6 +208,10 @@ h1, .h1 {
   font-size: 4rem;
 }
 
+h2, .h2 {
+  font-size: 2.7rem;
+}
+
 h3, .h3 {
   font-size: 2.3rem;
   margin-bottom: 15px;
@@ -223,6 +229,41 @@ p, .p {
 @media only screen and (max-width: 1200px) {
   h1, .h1 {
     font-size: 2.3rem;
+  }
+}
+h2 .punt {
+  position: absolute;
+  -webkit-animation: up-down 1.5s infinite;
+          animation: up-down 1.5s infinite;
+}
+
+@-webkit-keyframes up-down {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(0);
+  }
+  75% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes up-down {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(0);
+  }
+  75% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
   }
 }
 .btn {
@@ -245,15 +286,16 @@ p, .p {
 .btn::after {
   display: block;
   content: "";
-  width: 100px;
-  height: 100px;
+  width: 100%;
+  height: 100%;
   background: #154884;
   position: absolute;
   top: 0;
   left: 0;
-  transform: translate(-100px, -100px);
+  transform: translate(-100%, -100%);
   transition: all 0.2s;
   z-index: -1;
+  border-radius: 999px;
 }
 .btn.white {
   color: #fff !important;
@@ -262,6 +304,25 @@ p, .p {
 }
 .btn.white:hover {
   color: #fff;
+}
+.btn.portfolio {
+  position: absolute;
+  color: #fff;
+  left: 50%;
+  top: calc(50% - 45px);
+  transform: translate(-50%, 50%);
+  border-radius: 0 !important;
+  border: 3px solid #fff;
+  opacity: 0;
+  transition: all 0.5s;
+  font-size: 20px;
+}
+.btn.portfolio:hover {
+  color: #000;
+}
+.btn.portfolio::after {
+  background: #fff;
+  border-radius: 0 !important;
 }
 
 a.pull-out {
@@ -482,51 +543,51 @@ aside#menu.toggle {
     transform: translateX(0);
   }
 }
-section.hero {
+body.home section.hero {
   padding: 150px 0 100px 0;
   overflow: visible;
 }
-section.hero .hero-title {
+body.home section.hero .hero-title {
   display: inline-block;
 }
-section.hero .hero-title .h1, section.hero .hero-title h1 {
+body.home section.hero .hero-title .h1, body.home section.hero .hero-title h1 {
   display: inline-block;
 }
-section.hero .hero-title span.space {
+body.home section.hero .hero-title span.space {
   display: inline-block;
 }
-section.hero p {
+body.home section.hero p {
   padding: 20px 0;
   font-size: 1.3rem;
 }
 @media only screen and (max-width: 1200px) {
-  section.hero p {
+  body.home section.hero p {
     font-size: 1rem;
   }
 }
-section.hero .box-image {
+body.home section.hero .box-image {
   position: relative;
   margin-top: 80px;
 }
-section.hero .box-image img {
+body.home section.hero .box-image img {
   border-radius: 8px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.35);
 }
-section.hero .box-image::before, section.hero .box-image::after {
+body.home section.hero .box-image::before, body.home section.hero .box-image::after {
   content: "";
   border-radius: 50%;
   position: absolute;
   filter: blur(10rem);
   z-index: -1;
 }
-section.hero .box-image::before {
+body.home section.hero .box-image::before {
   width: 700px;
   height: 700px;
   left: -15%;
   top: -15%;
   background-image: linear-gradient(90deg, #edff7e 0%, #7fefea 100%);
 }
-section.hero .box-image::after {
+body.home section.hero .box-image::after {
   background: #7fefea;
   background: linear-gradient(170deg, #7fefea 0%, #0093e9 100%);
   width: 600px;
@@ -534,13 +595,12 @@ section.hero .box-image::after {
   right: -8%;
   bottom: -6%;
 }
-
-section.intro {
+body.home section.intro {
   padding: 70px 0;
   position: relative;
   overflow: hidden;
 }
-section.intro::before {
+body.home section.intro::before {
   content: "";
   position: absolute;
   top: 0;
@@ -551,7 +611,7 @@ section.intro::before {
   background: #f5f6f9;
   border-radius: 50%;
 }
-section.intro::after {
+body.home section.intro::after {
   content: "";
   position: absolute;
   background: #f5f6f9;
@@ -562,21 +622,69 @@ section.intro::after {
   z-index: -1;
 }
 @media only screen and (min-width: 1800px) {
-  section.intro::before {
+  body.home section.intro::before {
     content: none !important;
   }
-  section.intro::after {
+  body.home section.intro::after {
     top: 0 !important;
     height: 100% !important;
   }
 }
 @media only screen and (max-width: 800px) {
-  section.intro::before {
+  body.home section.intro::before {
     content: none !important;
   }
-  section.intro::after {
+  body.home section.intro::after {
     top: 0 !important;
     height: 100% !important;
+  }
+}
+body.home section.portfolio .portfolio__item {
+  padding: 30px;
+  border-radius: 15px;
+  background: #fff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  color: #333;
+}
+body.home section.portfolio .portfolio__item .__header {
+  margin-top: -60px;
+  position: relative;
+}
+body.home section.portfolio .portfolio__item .__header img {
+  border-radius: 15px;
+  transition: all 0.5s;
+  width: 100%;
+}
+body.home section.portfolio .portfolio__item .__header:hover a.portfolio {
+  opacity: 1;
+}
+body.home section.portfolio .portfolio__item .__header:hover img {
+  filter: brightness(0.3);
+}
+@media only screen and (max-width: 1400px) {
+  body.home section.portfolio .portfolio__item .__header img:hover {
+    filter: brightness(1) !important;
+  }
+  body.home section.portfolio .portfolio__item .__header a.portfolio {
+    display: none;
+  }
+}
+body.home section.portfolio .portfolio__item .__body p.short-description {
+  overflow: hidden;
+  text-overflow: ellipsiss;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+body.home section.portfolio .portfolio__item .__body .mobile {
+  display: none;
+}
+@media only screen and (max-width: 1400px) {
+  body.home section.portfolio .portfolio__item .__body .tags {
+    display: none;
+  }
+  body.home section.portfolio .portfolio__item .__body .mobile {
+    display: block;
   }
 }
 

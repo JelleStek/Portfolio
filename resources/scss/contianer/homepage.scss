@@ -1,100 +1,159 @@
-section.hero {
-  padding: 150px 0 100px 0;
-  overflow: visible;
-  .hero-title {
-    display: inline-block;
-    .h1,h1 {
+body.home {
+  section.hero {
+    padding: 150px 0 100px 0;
+    overflow: visible;
+    .hero-title {
       display: inline-block;
+      .h1,h1 {
+        display: inline-block;
+      }
+      span.space {
+        display: inline-block;
+      }
     }
-    span.space {
-      display: inline-block;
-    }
-  }
-  p {
-    padding: 20px 0;
-    font-size: 1.3rem;
-  }
-  @media only screen and (max-width: 1200px) {
     p {
-      font-size: 1rem;
+      padding: 20px 0;
+      font-size: 1.3rem;
+    }
+    @media only screen and (max-width: 1200px) {
+      p {
+        font-size: 1rem;
+      }
+    }
+    .box-image {
+      position: relative;
+      margin-top: 80px;
+
+      img {
+        border-radius: 8px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, .35);
+      }
+
+      &::before, &::after {
+        content: "";
+        border-radius: 50%;
+        position: absolute;
+        filter: blur(10rem);
+        z-index: -1;
+      }
+      &::before {
+        width: 700px;
+        height: 700px;
+        left: -15%;
+        top: -15%;
+        background-image: $gradient;
+      }
+      &::after {
+        background: rgb(127,239,234);
+        background: linear-gradient(170deg, rgba(127,239,234,1) 0%, rgba(0,147,233,1) 100%);
+        width: 600px;
+        height: 600px;
+        right: -8%;
+        bottom: -6%;
+      }
     }
   }
-  .box-image {
+
+  section.intro {
+    padding: 70px 0;
     position: relative;
-    margin-top: 80px;
+    overflow: hidden;
 
-    img {
-      border-radius: 8px;
-      box-shadow: 0 0 20px rgba(0, 0, 0, .35);
-    }
-
-    &::before, &::after {
+    &::before {
       content: "";
-      border-radius: 50%;
       position: absolute;
-      filter: blur(10rem);
+      top: 0;
+      left: -450px;
+      z-index: -1;
+      width: 200%;
+      padding-bottom: 200%;
+      background: #f5f6f9;
+      border-radius: 50%;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      background: #f5f6f9;
+      top: 600px;
+      left: 0;
+      width: 100%;
+      height: calc(100% - 600px);
       z-index: -1;
     }
-    &::before {
-      width: 700px;
-      height: 700px;
-      left: -15%;
-      top: -15%;
-      background-image: $gradient;
+    @media only screen and (min-width: 1800px) {
+      &::before {
+        content: none !important;
+      }
+      &::after {
+        top: 0 !important;
+        height: 100% !important;
+      }
     }
-    &::after {
-      background: rgb(127,239,234);
-      background: linear-gradient(170deg, rgba(127,239,234,1) 0%, rgba(0,147,233,1) 100%);
-      width: 600px;
-      height: 600px;
-      right: -8%;
-      bottom: -6%;
+    @media only screen and (max-width: 800px) {
+      &::before {
+        content: none !important;
+      }
+      &::after {
+        top: 0 !important;
+        height: 100% !important;
+      }
     }
   }
-}
 
-section.intro {
-  padding: 70px 0;
-  position: relative;
-  overflow: hidden;
+  section.portfolio {
+    .portfolio__item {
+      padding: 30px;
+      border-radius: 15px;
+      background: #fff;
+      box-shadow: 0 0 15px rgba(0,0,0,.2);
+      color: #333;
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: -450px;
-    z-index: -1;
-    width: 200%;
-    padding-bottom: 200%;
-    background: #f5f6f9;
-    border-radius: 50%;
-  }
-  &::after {
-    content: "";
-    position: absolute;
-    background: #f5f6f9;
-    top: 600px;
-    left: 0;
-    width: 100%;
-    height: calc(100% - 600px);
-    z-index: -1;
-  }
-  @media only screen and (min-width: 1800px) {
-    &::before {
-      content: none !important;
-    }
-    &::after {
-      top: 0 !important;
-      height: 100% !important;
-    }
-  }
-  @media only screen and (max-width: 800px) {
-    &::before {
-      content: none !important;
-    }
-    &::after {
-      top: 0 !important;
-      height: 100% !important;
+      .__header {
+        margin-top: -60px;
+        position: relative;
+        img {
+          border-radius: 15px;
+          transition: all .5s;
+          width: 100%;
+        }
+
+        &:hover {
+          a.portfolio {
+            opacity: 1;
+          }
+          img {
+            filter: brightness(.3);
+          }
+        }
+        @media only screen and (max-width: 1400px) {
+          img:hover {
+            filter: brightness(1) !important;
+          }
+          a.portfolio {
+            display: none;
+          }
+        }
+      }
+      .__body {
+        p.short-description {
+          overflow: hidden;
+          text-overflow: ellipsiss;
+          display: -webkit-box;
+          -webkit-line-clamp: 3;
+          -webkit-box-orient: vertical;
+        }
+        .mobile {
+          display: none;
+        }
+        @media only screen and (max-width: 1400px) {
+          .tags {
+            display: none;
+          }
+          .mobile {
+            display: block;
+          }
+        }
+      }
     }
   }
 }
