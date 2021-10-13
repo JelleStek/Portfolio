@@ -7,7 +7,7 @@ h1,.h1 {
   font-size: 4rem;
 }
 h2,.h2 {
-
+  font-size: 2.7rem;
 }
 h3,.h3 {
   font-size: 2.3rem;
@@ -24,5 +24,24 @@ p,.p {
 @media only screen and (max-width: 1200px) {
   h1,.h1 {
     font-size: 2.3rem;
+  }
+}
+
+h2 .punt {
+  position: absolute;
+  animation: up-down 1.5s infinite;
+}
+@keyframes up-down {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(0);
+  }
+  75% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
   }
 }
