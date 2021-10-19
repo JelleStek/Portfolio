@@ -17,5 +17,7 @@
 ?>
 
 <script>
-    window.location.replace('/')
+    setTimeout( () => {
+        window.location.replace('/');
+    }, 500);
 </script>
