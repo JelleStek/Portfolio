@@ -10,8 +10,9 @@
         $sendToEmail = "jelle@nwave.nl";
 
         $mailSendMessage = $email . "\n" . $tel . "\n\n" . $subject . "\n\n\n" . $message;
+        $headers = "Mail verstuurd door:" . $email;
 
-        mail($sendToEmail, $subject, $mailSendMessage);
+        mail($sendToEmail, $subject, $mailSendMessage, $headers);
     }
 ?>
 
