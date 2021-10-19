@@ -19,3 +19,8 @@ Route::get('/', function () {
 Route::get('/over-mij', function () {
     return view('about');
 });
+
+//send email
+Route::get('/sending-email', function () {
+    return view('send-email');
+});

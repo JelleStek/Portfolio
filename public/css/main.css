@@ -687,6 +687,24 @@ body.home section.portfolio .portfolio__item .__body .mobile {
     display: block;
   }
 }
+body.home section.contact form label {
+  display: block;
+  margin-bottom: 5px;
+}
+body.home section.contact form input, body.home section.contact form textarea {
+  width: 100%;
+  margin-bottom: 15px;
+  border: 1px solid #bbbbbb;
+  padding: 5px 15px;
+  border-radius: 5px;
+  background: #fff;
+  color: #000;
+  resize: none;
+}
+body.home section.contact form textarea {
+  min-height: 200px;
+  height: auto;
+}
 
 section.cta {
   position: relative;

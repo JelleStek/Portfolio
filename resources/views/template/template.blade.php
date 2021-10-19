@@ -36,7 +36,7 @@
             let loader = document.getElementById('loader');
             loader.classList.add('hidden');
             triggerDisplay();
-        },
+        }
     })
     app.mount('#main')
 

@@ -156,4 +156,27 @@ body.home {
       }
     }
   }
+
+  section.contact {
+    form {
+      label {
+        display: block;
+        margin-bottom: 5px;
+      }
+      input,textarea {
+        width: 100%;
+        margin-bottom: 15px;
+        border: 1px solid #bbbbbb;
+        padding: 5px 15px;
+        border-radius: 5px;
+        background: #fff;
+        color: #000;
+        resize: none;
+      }
+      textarea {
+        min-height: 200px;
+        height: auto;
+      }
+    }
+  }
 }
