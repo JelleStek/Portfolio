@@ -129,7 +129,7 @@
                                 <textarea name="message" id="message"></textarea>
                             </div>
                             <div class="col-12">
-                                <button type="submit">Verstuur</button>
+                                <button type="submit" name="submit">Verstuur</button>
                             </div>
                         </div>
                     </form>

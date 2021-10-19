@@ -12,12 +12,14 @@
         $mailSendMessage = $email . "\n" . $tel . "\n\n" . $subject . "\n\n\n" . $message;
         $headers = "Mail verstuurd door:" . $email;
 
+        echo($sendToEmail. $subject. $mailSendMessage. $headers);
+        echo("test");
         mail($sendToEmail, $subject, $mailSendMessage, $headers);
     }
 ?>
 
 <script>
-    setTimeout( () => {
-        window.location.replace('/');
-    }, 500);
+    // setTimeout( () => {
+    //     window.location.replace('/');
+    // }, 500);
 </script>
