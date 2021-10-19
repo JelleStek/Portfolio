@@ -1,11 +1,11 @@
 <?php
 
-    if(isset($_POST['submit'])) {
-        $name = $_POST['name'];
-        $subject = $_POST['subject'];
-        $email = $_POST['email'];
-        $tel = $_POST['tel'];
-        $message = $_POST['message'];
+    if(isset($_GET['submit'])) {
+        $name = $_GET['name'];
+        $subject = $_GET['subject'];
+        $email = $_GET['email'];
+        $tel = $_GET['tel'];
+        $message = $_GET['message'];
 
         $sendToEmail = "jelle@nwave.nl";
 
