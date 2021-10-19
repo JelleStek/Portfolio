@@ -21,6 +21,10 @@ Route::get('/over-mij', function () {
 });
 
 //send email
-Route::get('/sending-email', function () {
-    return view('send-email');
-});
+Route::get(
+    '/sendContact',
+    [
+        ContactController::class,
+        'sendMail'
+    ]
+)->name('send-mail');

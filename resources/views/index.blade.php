@@ -106,7 +106,8 @@
                     <h2>Neem contact op<span class="punt">.</span></h2>
                 </div>
                 <div class="col-lg-6">
-                    <form action="sending-email" method="get">
+                    <form method="HEAD" action="{{ route('send-mail') }}">
+                        @csrf
                         <div class="row">
                             <div class="col-md-6">
                                 <label for="name">Naam*</label>
@@ -129,7 +130,7 @@
                                 <textarea name="message" id="message"></textarea>
                             </div>
                             <div class="col-12">
-                                <button type="submit" name="submit">Verstuur</button>
+                                <button name="submit" type="submit" class="btn">Verstuur</button>
                             </div>
                         </div>
                     </form>
