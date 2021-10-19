@@ -106,7 +106,7 @@
                     <h2>Neem contact op<span class="punt">.</span></h2>
                 </div>
                 <div class="col-lg-6">
-                    <form action="sending-email" method="get">
+                    <form action="sending-email" method="post">
                         <div class="row">
                             <div class="col-md-6">
                                 <label for="name">Naam*</label>
