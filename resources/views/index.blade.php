@@ -6,7 +6,9 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-9 col-12 text-center">
-                    <div class="hero-title"><h2 class="h1">Hoi! Ik ben <span class="space"></span></h2><h1>Jelle Stekelenburg,</h1><span class="space"></span><h2 class="h1"> een developer in de Amsterdam regio</h2></div>
+                    <div class="hero-title"><h2 class="h1">Hoi! Ik ben <span class="space"></span></h2>
+                        <h1>Jelle Stekelenburg,</h1><span class="space"></span>
+                        <h2 class="h1"> een developer in de Amsterdam regio</h2></div>
                     <p>Ik ben een 1e jaar HBO student met meer dan 3 jaar ervaring.</p>
 
                     <div class="box-image">
@@ -31,8 +33,8 @@
             </div>
             <div class="row align-items-center">
 
-                <div class="col-lg-6">
-                    <img class="box-image" src="{{asset('images/homepage/css.jpg')}}" alt="css self made code">
+                <div class="col-lg-6 position-relative">
+                    <div class="blur __one"><img class="box-image" src="{{asset('images/homepage/css.jpg')}}" alt="css self made code"></div>
                 </div>
                 <div class="col-lg-6">
                     <div class="content">
@@ -57,8 +59,9 @@
                             nog veel te leren kan ik al aardig mijn weg vinden binnen javascript en jquery.</p>
                     </div>
                 </div>
-                <div class="col-lg-6">
-                    <img class="box-image" src="{{asset('images/homepage/js.jpg')}}" alt="Javascript self made code">
+                <div class="col-lg-6 position-relative">
+                    <div class="blur __two"><img class="box-image blur __two" src="{{asset('images/homepage/js.jpg')}}"
+                                                 alt="Javascript self made code"></div>
                 </div>
             </div>
         </div>
@@ -82,7 +85,8 @@
                         </div>
                         <div class="__body">
                             <h3>nwave</h3>
-                            <p class="short-description">nwave is de eenmans zaak op mijn naam. Via deze manier kan ik freelance werk doen. Website heeft services</p>
+                            <p class="short-description">nwave is de eenmans zaak op mijn naam. Via deze manier kan ik
+                                freelance werk doen. Website heeft services</p>
                             <div class="tags">
                                 <p class="mini-title">laravel</p>
                                 <p class="mini-title">sass</p>

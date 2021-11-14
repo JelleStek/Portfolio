@@ -1,5 +1,7 @@
 $main: #154884;
 $gradient: linear-gradient(90deg, #edff7e 0%, #7fefea 100%);
+$gradienttwo: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);
+$gradientthree: linear-gradient(90deg, #f8ff00 0%, #3ad59f 100%);
 $divider: linear-gradient(90deg, rgba(32, 131, 248, 1) 0%, rgba(0, 0, 0, 0) 100%);
 $clip-path: polygon(50px 0, 100% 0, 100% calc(100% - 50px), calc(100% - 50px) 100%, 0 100%, 0 50px);
 $text-color: #212529;
@@ -33,23 +35,58 @@ a {
   margin-top: 5px;
   margin-bottom: 30px;
 }
+
 img {
   max-width: 100%;
 }
+
 .highlight {
   color: $main;
 }
 
 img.box-image {
- object-fit: cover;
- width: 100%;
- height: 100%;
- box-shadow: 0 0 20px rgba(0,0,0,.23);
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, .23);
+  position: relative;
+  z-index: 1;
 }
+.blur {
+  position: relative;
+}
+.blur::before {
+  content: "";
+  position: absolute;
+  filter: blur(2em);
+  border-radius: 50%;
+  z-index: -1;
+  overflow: visible;
+}
+.blur.__one::before  {
+  right: -125px;
+  top: -100px;
+  width: 400px;
+  height: 400px;
+  background: $gradienttwo;
+  opacity: .4;
+}
+
+.blur.__two::before  {
+  width: 500px;
+  height: 500px;
+  right: -140px;
+  top: 20%;
+  transform: translateY(-50%);
+  background: $gradientthree;
+  opacity: .5;
+}
+
 
 .row {
   padding: 30px 0;
 }
+
 @media only screen and (max-width: 50em) {
   .row {
     padding: 15px 0;
@@ -90,8 +127,9 @@ img.box-image {
   right: 30px;
   bottom: 30px;
   cursor: pointer;
-  box-shadow: 0 0 5px rgba(0,0,0,.2);
+  box-shadow: 0 0 5px rgba(0, 0, 0, .2);
   border-radius: 3px;
+
   &:hover {
     img {
       transform: translateY(-5px);
@@ -103,6 +141,7 @@ img.box-image {
     transition: all .35s;
   }
 }
+
 @media only screen and (max-width: 950px) {
   #goUp {
     display: none !important;
