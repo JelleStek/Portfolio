@@ -11,14 +11,16 @@ class ContactMail extends Mailable
 {
     use Queueable, SerializesModels;
 
+    public $details;
+
     /**
      * Create a new message instance.
      *
      * @return void
      */
-    public function __construct($data)
+    public function __construct($details)
     {
-        $this->data = $data;
+        $this->details = $details;
     }
 
     /**
@@ -28,11 +30,6 @@ class ContactMail extends Mailable
      */
     public function build()
     {
-        return
-            $this
-                ->view('mail.contact', ['data' => $this->data])
-                ->subject('Contact formulier website')
-                ->from('forward@nwave.nl', 'Contact formulier');
+        return $this->subject('Contact Message')->view('mail.contactMail');
     }
 }
-?>
