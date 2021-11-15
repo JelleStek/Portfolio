@@ -32,7 +32,7 @@ class ContactMail extends Mailable
             $this
                 ->view('mail.contact', ['data' => $this->data])
                 ->subject('Contact formulier website')
-                ->from('contact@nwave.nl', 'Contact formulier');
+                ->from('forward@nwave.nl', 'Contact formulier');
     }
 }
 ?>
