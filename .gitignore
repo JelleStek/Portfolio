@@ -27,3 +27,17 @@ Homestead.json
 /.idea
 .idea
 composer.lock
+
+package-lock.json
+
+package.json
+
+public/js/main.js
+
+resources/views/contact.blade.php
+
+resources/views/index.blade.php
+
+resources/views/mail/contactMail.blade.php
+
+routes/web.php
