@@ -101,6 +101,13 @@ body.home {
   }
 
   section.portfolio {
+    .blur.__one::before {
+      left: 14% !important;
+
+    }
+    .title {
+      margin-bottom: 30px;
+    }
     .portfolio__item {
       padding: 30px;
       border-radius: 15px;
