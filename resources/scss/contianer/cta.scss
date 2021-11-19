@@ -6,14 +6,15 @@ section.cta {
   background-size: cover;
   box-shadow: 0 0 15px rgba(0,0,0,.2);
   overflow: hidden;
+  margin: 0;
 
   &::before {
     content: "";
     width: 100%;
     height: 100%;
     background: $gradienttwo;
-    opacity: .3;
-    filter: brightness(.3);
+    opacity: .98;
+    filter: brightness(.32);
     position: absolute;
     left: 0;
     top: 0;

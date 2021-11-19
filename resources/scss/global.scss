@@ -18,6 +18,10 @@ html, body {
   color: #154884;
 }
 
+main {
+  overflow-y: hidden !important;
+}
+
 [v-cloak] {
   display: none;
 }
