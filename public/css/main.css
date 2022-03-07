@@ -235,11 +235,27 @@ img.box-image {
   transition: all 0.35s;
 }
 
+.show-mobile {
+  display: none;
+}
+
 @media only screen and (max-width: 950px) {
   #goUp {
     display: none !important;
   }
+
+  .hide-mobile {
+    display: none !important;
+  }
+
+  .show-mobile {
+    display: block !important;
+  }
 }
+.show-mobile {
+  display: none;
+}
+
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
@@ -348,6 +364,18 @@ h2 .punt {
 .btn.white:hover::after {
   color: #fff;
 }
+.btn.black {
+  color: #333 !important;
+  border-color: transparent !important;
+  background-color: #fff !important;
+  overflow: hidden;
+}
+.btn.black:hover {
+  color: #333 !important;
+}
+.btn.black:hover::after {
+  color: #333 !important;
+}
 .btn.portfolio {
   position: absolute;
   color: #fff;
@@ -429,7 +457,7 @@ header#header .branding h3 {
   margin: 0 !important;
   color: #fff;
   font-size: 1.85rem;
-  font-weight: 500;
+  font-weight: 700;
 }
 @media only screen and (max-width: 950px) {
   header#header .branding h3 {
@@ -604,35 +632,93 @@ body.home section.hero p {
     font-size: 1rem;
   }
 }
-body.home section.hero .box-image {
-  position: relative;
-  margin-top: 80px;
-}
-body.home section.hero .box-image img {
+body.home section.hero .browser {
+  width: 100%;
   border-radius: 8px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  background: #f2f2f2;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
-body.home section.hero .box-image::before, body.home section.hero .box-image::after {
-  content: "";
+body.home section.hero .browser .__nav {
+  width: 100%;
+  background: lightgray;
+  padding: 12px 5px;
+  overflow: hidden;
+}
+body.home section.hero .browser .__nav .flex-grid {
+  display: flex;
+  flex-direction: row;
+}
+body.home section.hero .browser .__nav .flex-grid span {
+  display: block;
+  width: 12px;
+  height: 12px;
   border-radius: 50%;
+  margin-right: 7px;
+}
+body.home section.hero .browser .__nav .flex-grid span:nth-of-type(1) {
+  background: #dd4f4c;
+}
+body.home section.hero .browser .__nav .flex-grid span:nth-of-type(2) {
+  background: #ffc64a;
+}
+body.home section.hero .browser .__nav .flex-grid span:nth-of-type(3) {
+  background: #2bc55c;
+}
+body.home section.hero .browser .__nav .flex-grid .tab {
+  margin: 0 20px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background: #f2f2f2;
+  padding: 0 50px 0 20px;
+  height: 12px;
+  position: relative;
+  top: -7px;
+}
+body.home section.hero .browser .__nav .flex-grid .tab::after {
+  content: "";
   position: absolute;
-  filter: blur(10rem);
-  z-index: -1;
+  width: 100%;
+  height: 20px;
+  width: 100%;
+  left: 0;
+  bottom: -20px;
+  background: #f2f2f2;
+  z-index: 0;
 }
-body.home section.hero .box-image::before {
-  width: 700px;
-  height: 700px;
-  left: -15%;
-  top: -15%;
-  background-image: linear-gradient(90deg, #edff7e 0%, #7fefea 100%);
+body.home section.hero .browser .__nav .flex-grid .tab::before {
+  content: "x";
+  width: 15px;
+  height: 15px;
+  font-weight: 400;
+  z-index: 2;
+  position: absolute;
+  color: gray;
+  right: 13px;
+  top: 4.5px;
 }
-body.home section.hero .box-image::after {
-  background: #7fefea;
-  background: linear-gradient(170deg, #7fefea 0%, #0093e9 100%);
-  width: 600px;
-  height: 600px;
-  right: -8%;
-  bottom: -6%;
+body.home section.hero .browser .__nav .flex-grid .tab p {
+  font-size: 12px;
+  line-height: 0;
+  color: gray;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  top: 17px;
+  z-index: 1;
+}
+body.home section.hero .browser .__body {
+  position: relative;
+  padding-bottom: 56%;
+}
+body.home section.hero .browser .__body .content {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  max-width: 100%;
+  text-align: center;
 }
 body.home section.intro {
   padding: 70px 0;
@@ -694,6 +780,14 @@ body.home section.portfolio .portfolio__grid .portfolio__item {
   position: relative;
   padding-bottom: 70%;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  transition: all 0.2s;
+}
+body.home section.portfolio .portfolio__grid .portfolio__item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.45);
+}
+body.home section.portfolio .portfolio__grid .portfolio__item:hover .btn {
+  opacity: 1;
 }
 body.home section.portfolio .portfolio__grid .portfolio__item .content {
   background-color: rgba(0, 0, 0, 0.5);
@@ -708,7 +802,7 @@ body.home section.portfolio .portfolio__grid .portfolio__item .content p {
   overflow: hidden;
   font-size: 14px;
 }
-body.home section.portfolio .portfolio__grid .portfolio__item .btn.white {
+body.home section.portfolio .portfolio__grid .portfolio__item .btn {
   position: absolute;
   bottom: 30px;
   left: 30px;
@@ -723,14 +817,14 @@ body.home section.portfolio .portfolio__grid .portfolio__item .overlay {
   opacity: 0.25;
   transition: all 0.2s ease-in-out;
 }
-body.home section.portfolio .portfolio__grid .portfolio__item .overlay:hover .btn.white {
-  opacity: 1;
-}
 body.home section.portfolio .portfolio__grid .portfolio__item:nth-of-type(1):hover .overlay {
   background: #a40826;
 }
 body.home section.portfolio .portfolio__grid .portfolio__item:nth-of-type(2):hover .overlay {
   background: gray;
+}
+body.home section.portfolio .portfolio__grid .portfolio__item:nth-of-type(3):hover .overlay {
+  background: #BE9759;
 }
 body.home section.contact form label {
   display: block;

@@ -5,22 +5,43 @@
     <section class="hero">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-lg-9 col-12 text-center">
+                <!-- <div class="col-lg-9 col-12 text-center">
                     <div class="hero-title"><h2 class="h1">Hoi! Ik ben <span class="space"></span></h2>
                         <h1>Jelle Stekelenburg,</h1><span class="space"></span>
                         <h2 class="h1"> een developer in de Amsterdam regio</h2></div>
                     <p>Ik ben een Front-end developer met 4 jaar ervaring.</p>
 
-                    <!-- <div class="box-image">
+                    <div class="box-image">
                         <img src="{{asset('/images/homepage/hero.jpg')}}" alt="nwave website">
-                    </div> -->
-                </div>
-                <div class="col-lg-9 col-12">
+                    </div>
+                </div> -->
+                <div class="col-lg-9 col-12 hide-mobile">
                     <div class="browser">
-                        <div class="nav">
-                            
+                        <div class="__nav">
+                            <div class="flex-grid">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <div class="tab">
+                                    <p>Portfolio - Jelle Stekelenburg</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="__body">
+                            <div class="content">
+                                <div class="hero-title"><h2 class="h1">Hoi! Ik ben <span class="space"></span></h2>
+                                <h1>Jelle Stekelenburg,</h1><span class="space"></span>
+                                <h2 class="h1"> een developer in de Amsterdam regio</h2></div>
+                                <p>Ik ben een Front-end developer met 4 jaar ervaring.</p>
+                            </div>
                         </div>
                     </div>
+                </div>
+                <div class="col-12 show-mobile">
+                    <div class="hero-title"><h2 class="h1">Hoi! Ik ben <span class="space"></span></h2>
+                    <h1>Jelle Stekelenburg,</h1><span class="space"></span>
+                    <h2 class="h1"> een developer in de Amsterdam regio</h2></div>
+                    <p>Ik ben een Front-end developer met 4 jaar ervaring.</p>
                 </div>
             </div>
         </div>
@@ -34,7 +55,7 @@
                 </div>
                 <div class="col-9 text-center">
                     <div class="intro-text">
-                        <p>Ik ben Jelle Stekelenburg, Een 19 jarige developer en student.</p>
+                        <p>Wat kan ik, doe ik en heb ik gedaan.</p>
                     </div>
                 </div>
             </div>
@@ -89,51 +110,6 @@
                 </div>
                 <div class="row">
 
-                    <!-- <div class="col-xl-4 col-md-6 col-12">
-                        <div class="portfolio__item">
-                            <div class="__header">
-                                <img src="{{asset('/images/portfolio/nwave.jpg')}}" alt="nwave portfolio item">
-                                <a href="" class="btn portfolio">Lees meer</a>
-                            </div>
-                            <div class="__body">
-                                <h3>nwave</h3>
-                                <p class="short-description">nwave is de eenmans zaak op mijn naam. Via deze manier kan
-                                    ik
-                                    freelance werk doen. Website heeft services</p>
-                                <div class="tags">
-                                    <p class="mini-title">laravel</p>
-                                    <p class="mini-title">sass</p>
-                                    <p class="mini-title">javascript</p>
-                                    <p class="mini-title">jquery</p>
-                                </div>
-                                <div class="mobile">
-                                    <a href="" class="btn">Lees meer</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-md-6 col-12">
-                        <div class="portfolio__item">
-                            <div class="__header">
-                                <img src="{{asset('/images/portfolio/ian.jpg')}}" alt="nwave portfolio item">
-                                <a href="" class="btn portfolio">Lees meer</a>
-                            </div>
-                            <div class="__body">
-                                <h3>Ian Remeijsen</h3>
-                                <p class="short-description">Portfolio website van student acteur op het mediacollege Amsterdam.</p>
-                                <div class="tags">
-                                    <p class="mini-title">Wordpress</p>
-                                    <p class="mini-title">sass</p>
-                                    <p class="mini-title">javascript</p>
-                                    <p class="mini-title">jquery</p>
-                                </div>
-                                <div class="mobile">
-                                    <a href="" class="btn">Lees meer</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div> -->
-
                     <div class="col-12">
                         <div class="portfolio__grid">
                             <div class="portfolio__item muiderslot" style="background-image: url({{asset('/images/portfolio/Muiderslot.jpg')}}) ">
@@ -158,8 +134,16 @@
                                 </div>
                                 <a href="" class="btn white" >Lees Meer</a>
                             </div>
-                            <div class="portfolio__item">
-                                test
+                            <div class="portfolio__item muiderslot" style="background-image: url({{asset('/images/portfolio/Bluetravel.jpg')}}) ">
+                                <div class="overlay"></div>
+                                <div class="content">
+                                    <h4>BLUEtravel</h4>
+                                    <p>
+                                        Een geweldige reis boeken via een mooie en duidelijke website, 
+                                        BLUEtravel geeft juist aan waarom UX-IU een belangrijk aspect is.
+                                    </p>
+                                </div>
+                                <a href="" class="btn black" >Lees Meer</a>
                             </div>
                             <div class="portfolio__item">
                                 test

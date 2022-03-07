@@ -150,8 +150,26 @@ img.box-image {
   }
 }
 
+
+.show-mobile {
+  display: none;
+}
 @media only screen and (max-width: 950px) {
   #goUp {
     display: none !important;
   }
+  .hide-mobile {
+    display: none !important;
+  }
+  .show-mobile {
+    display: block !important;
+  }
 }
+.show-mobile {
+  display: none;
+}
+// @media only screen and (max-width: 950px) {
+//   .show-mobile {
+//     display: block !important;
+//   }
+// }

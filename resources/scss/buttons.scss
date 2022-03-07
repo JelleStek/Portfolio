@@ -43,6 +43,22 @@
     }
   }
 
+  &.black {
+    color: #333 !important;
+    border-color: transparent !important;
+    background-color: #fff !important;
+    overflow: hidden;
+
+    &:hover {
+      color: #333 !important;
+
+      &::after {
+        color: #333  !important;
+      }
+    }
+  }
+  
+
   &.portfolio {
     position: absolute;
     color: #fff;
