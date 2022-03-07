@@ -1,5 +1,7 @@
 require('./bootstrap');
 
+
+
 window.onscroll = function () {
     scrollFunction()
 };
@@ -52,3 +54,6 @@ $('#hamburger-toggle').on('click', () => {
 switch (window.location.pathname) {
     case "/": $('body').addClass('home'); break;
 }
+
+
+          

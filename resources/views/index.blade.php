@@ -9,10 +9,17 @@
                     <div class="hero-title"><h2 class="h1">Hoi! Ik ben <span class="space"></span></h2>
                         <h1>Jelle Stekelenburg,</h1><span class="space"></span>
                         <h2 class="h1"> een developer in de Amsterdam regio</h2></div>
-                    <p>Ik ben een 1e jaar HBO student met meer dan 3 jaar ervaring.</p>
+                    <p>Ik ben een Front-end developer met 4 jaar ervaring.</p>
 
-                    <div class="box-image">
+                    <!-- <div class="box-image">
                         <img src="{{asset('/images/homepage/hero.jpg')}}" alt="nwave website">
+                    </div> -->
+                </div>
+                <div class="col-lg-9 col-12">
+                    <div class="browser">
+                        <div class="nav">
+                            
+                        </div>
                     </div>
                 </div>
             </div>
@@ -82,7 +89,7 @@
                 </div>
                 <div class="row">
 
-                    <div class="col-xl-4 col-md-6 col-12">
+                    <!-- <div class="col-xl-4 col-md-6 col-12">
                         <div class="portfolio__item">
                             <div class="__header">
                                 <img src="{{asset('/images/portfolio/nwave.jpg')}}" alt="nwave portfolio item">
@@ -125,8 +132,40 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
 
+                    <div class="col-12">
+                        <div class="portfolio__grid">
+                            <div class="portfolio__item muiderslot" style="background-image: url({{asset('/images/portfolio/Muiderslot.jpg')}}) ">
+                                <div class="overlay"></div>
+                                <div class="content">
+                                    <h4>Muiderslot</h4>
+                                    <p>
+                                        Rijksmuseum Muiderslot is een complexe & spannende
+                                        opdracht waarin meer dan 22.000 maandelijkse bezoekers over heel de wereld gebruik maken van mijn creaties.
+                                    </p>
+                                </div>
+                                <a href="" class="btn white" >Lees Meer</a>
+                            </div>
+                            <div class="portfolio__item muiderslot" style="background-image: url({{asset('/images/portfolio/ian.jpg')}}) ">
+                                <div class="overlay"></div>
+                                <div class="content">
+                                    <h4>Ian Remeijsen</h4>
+                                    <p>
+                                        Acteur Ian Remeijsen had een website nodig om uit te blinken als acteur, 
+                                        een persoonlijke en zelf geïnspireerde website is het eindresulstaat.
+                                    </p>
+                                </div>
+                                <a href="" class="btn white" >Lees Meer</a>
+                            </div>
+                            <div class="portfolio__item">
+                                test
+                            </div>
+                            <div class="portfolio__item">
+                                test
+                            </div>
+                        </div>    
+                    </div>
                 </div>
             </div>
     </section>
