@@ -36,6 +36,12 @@ section.cta {
     }
   }
 
+  img {
+    position: absolute;
+    top: 25px;
+    transform: scale(.9);
+  }
+
   @media only screen and (max-width: 950px) {
     .content {
       h2 {

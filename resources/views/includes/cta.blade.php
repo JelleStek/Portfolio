@@ -7,6 +7,9 @@
                     <a href="/contact" class="btn white">contact</a>
                 </div>
             </div>
+            <div class="col-lg-5 offset-1 col-lg-rm">
+                <img src="{{asset('/images/global/iphoneMock.png')}}" alt="Iphone Mockup">
+            </div>
         </div>
     </div>
 </section>

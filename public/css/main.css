@@ -766,65 +766,60 @@ body.home section.intro::after {
 }
 body.home section.portfolio .portfolio__grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 2rem;
+  margin-top: 50px;
   padding: 0 15px;
 }
 body.home section.portfolio .portfolio__grid .portfolio__item {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  border-radius: 12px;
+  border-radius: 15px;
   color: #fff;
-  overflow: hidden;
   position: relative;
-  padding-bottom: 70%;
+  height: 350px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
-  transition: all 0.2s;
+  transition: all 0.4s;
 }
 body.home section.portfolio .portfolio__grid .portfolio__item:hover {
-  transform: scale(1.05);
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.45);
+  transform: scale(1.035);
 }
-body.home section.portfolio .portfolio__grid .portfolio__item:hover .btn {
-  opacity: 1;
+body.home section.portfolio .portfolio__grid .portfolio__item:hover img {
+  transform: scale(1.1);
 }
-body.home section.portfolio .portfolio__grid .portfolio__item .content {
-  background-color: rgba(0, 0, 0, 0.5);
-  -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px);
-  padding: 30px;
-}
-body.home section.portfolio .portfolio__grid .portfolio__item .content h4 {
-  margin-bottom: 15px;
-}
-body.home section.portfolio .portfolio__grid .portfolio__item .content p {
-  overflow: hidden;
-  font-size: 14px;
-}
-body.home section.portfolio .portfolio__grid .portfolio__item .btn {
+body.home section.portfolio .portfolio__grid .portfolio__item .__title {
   position: absolute;
-  bottom: 30px;
-  left: 30px;
-  opacity: 0;
-}
-body.home section.portfolio .portfolio__grid .portfolio__item .overlay {
-  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   left: 0;
   top: 0;
-  width: 100%;
   height: 100%;
-  opacity: 0.25;
-  transition: all 0.2s ease-in-out;
+  width: 30px;
 }
-body.home section.portfolio .portfolio__grid .portfolio__item:nth-of-type(1):hover .overlay {
-  background: #a40826;
+body.home section.portfolio .portfolio__grid .portfolio__item h4 {
+  position: relative;
+  left: 30px;
+  transform: rotate(-90deg);
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  font-size: 35px;
 }
-body.home section.portfolio .portfolio__grid .portfolio__item:nth-of-type(2):hover .overlay {
-  background: gray;
+body.home section.portfolio .portfolio__grid .portfolio__item img {
+  position: absolute;
+  max-width: 70%;
+  max-height: 130%;
+  right: 10%;
+  top: -15%;
+  filter: drop-shadow(0 0 7px rgba(0, 0, 0, 0.15));
+  transition: all 0.2s;
 }
-body.home section.portfolio .portfolio__grid .portfolio__item:nth-of-type(3):hover .overlay {
-  background: #BE9759;
+@media only screen and (max-wdith: 1200px) {
+  body.home section.portfolio .portfolio__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 body.home section.contact form label {
   display: block;
@@ -878,6 +873,11 @@ section.cta .content h2 {
   line-height: 55px;
   margin-bottom: 20px;
   color: #fff;
+}
+section.cta img {
+  position: absolute;
+  top: 25px;
+  transform: scale(0.9);
 }
 @media only screen and (max-width: 950px) {
   section.cta .content h2 {

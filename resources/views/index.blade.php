@@ -112,42 +112,34 @@
 
                     <div class="col-12">
                         <div class="portfolio__grid">
-                            <div class="portfolio__item muiderslot" style="background-image: url({{asset('/images/portfolio/Muiderslot.jpg')}}) ">
-                                <div class="overlay"></div>
-                                <div class="content">
-                                    <h4>Muiderslot</h4>
-                                    <p>
-                                        Rijksmuseum Muiderslot is een complexe & spannende
-                                        opdracht waarin meer dan 22.000 maandelijkse bezoekers over heel de wereld gebruik maken van mijn creaties.
-                                    </p>
+
+                            <a href="">
+                                <div class="portfolio__item muiderslot" data style="background-image: url({{asset('/images/portfolio/muiderslot_background.jpg')}}) ">
+                                        <div class="__title">
+                                            <h4>Muiderslot</h4>
+                                        </div>
+                                        <img src="{{asset('/images/portfolio/muiderslot.png')}}" alt="">
                                 </div>
-                                <a href="" class="btn white" >Lees Meer</a>
-                            </div>
-                            <div class="portfolio__item muiderslot" style="background-image: url({{asset('/images/portfolio/ian.jpg')}}) ">
-                                <div class="overlay"></div>
-                                <div class="content">
-                                    <h4>Ian Remeijsen</h4>
-                                    <p>
-                                        Acteur Ian Remeijsen had een website nodig om uit te blinken als acteur, 
-                                        een persoonlijke en zelf geïnspireerde website is het eindresulstaat.
-                                    </p>
+                            </a>
+
+                            <a href="">
+                                <div class="portfolio__item muiderslot" style="background-image: url({{asset('/images/portfolio/ian_background.jpg')}}) ">
+                                    <div class="__title">
+                                    <h4>Ian<span style="margin-left:13px"></span>Remeijsen</h4>
+                                    </div>
+                                    <img src="{{asset('/images/portfolio/ian.png')}}" alt="">
                                 </div>
-                                <a href="" class="btn white" >Lees Meer</a>
-                            </div>
-                            <div class="portfolio__item muiderslot" style="background-image: url({{asset('/images/portfolio/Bluetravel.jpg')}}) ">
-                                <div class="overlay"></div>
-                                <div class="content">
-                                    <h4>BLUEtravel</h4>
-                                    <p>
-                                        Een geweldige reis boeken via een mooie en duidelijke website, 
-                                        BLUEtravel geeft juist aan waarom UX-IU een belangrijk aspect is.
-                                    </p>
+                            </a>
+
+                            <a href="">
+                                <div class="portfolio__item muiderslot" data style="background-image: url({{asset('/images/portfolio/bluetravel_background.jpg')}}) ">
+                                    <div class="__title">
+                                        <h4>BLUEtravel</h4>
+                                    </div>
+                                    <img src="{{asset('/images/portfolio/bluetravel.png')}}" alt="">
                                 </div>
-                                <a href="" class="btn black" >Lees Meer</a>
-                            </div>
-                            <div class="portfolio__item">
-                                test
-                            </div>
+                            </a>
+
                         </div>    
                     </div>
                 </div>
