@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="{{asset('/css/loader.css')}}">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link rel="stylesheet" href="{{asset('/css/main.css')}}">
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <title>Portfolio - Jelle Stekelenburg</title>
 </head>
 <body>
@@ -47,9 +46,7 @@
     }
 </script>
 <script defer src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
 <script defer src="{{asset('/js/main.js')}}"></script>
-
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-NXH5Q98JD4"></script>
 <script>
     window.dataLayer = window.dataLayer || [];

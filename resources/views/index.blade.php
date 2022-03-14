@@ -34,6 +34,9 @@
                                 <h2 class="h1"> een developer in de Amsterdam regio</h2></div>
                                 <p>Ik ben een Front-end developer met 4 jaar ervaring.</p>
                             </div>
+                            <img src="{{asset('/images/homepage/slide_3.jpg')}}" alt="">
+                            <img src="{{asset('/images/homepage/slide_2.jpg')}}" alt="">
+                            <img src="{{asset('/images/homepage/slide_1.jpg')}}" alt="">
                         </div>
                     </div>
                 </div>
