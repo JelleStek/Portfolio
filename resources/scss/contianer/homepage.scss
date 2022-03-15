@@ -4,7 +4,8 @@ body.home {
     overflow: visible;
     .hero-title {
       display: inline-block;
-      .h1,h1 {
+      .h1,
+      h1 {
         display: inline-block;
       }
       span.space {
@@ -24,12 +25,12 @@ body.home {
     .browser {
       width: 100%;
       border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0,0,0,.15);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
       background: #f2f2f2;
       overflow: hidden;
       display: flex;
       flex-direction: column;
-      
+
       .__nav {
         width: 100%;
         background: lightgray;
@@ -39,7 +40,7 @@ body.home {
         .flex-grid {
           display: flex;
           flex-direction: row;
-          
+
           span {
             display: block;
             width: 12px;
@@ -47,9 +48,15 @@ body.home {
             border-radius: 50%;
             margin-right: 7px;
 
-            &:nth-of-type(1) { background: #dd4f4c }
-            &:nth-of-type(2) { background: #ffc64a }
-            &:nth-of-type(3) { background: #2bc55c }
+            &:nth-of-type(1) {
+              background: #dd4f4c;
+            }
+            &:nth-of-type(2) {
+              background: #ffc64a;
+            }
+            &:nth-of-type(3) {
+              background: #2bc55c;
+            }
           }
           .tab {
             margin: 0 20px;
@@ -75,9 +82,8 @@ body.home {
               background: #f2f2f2;
               z-index: 0;
               animation: tabSwitch__background 1s;
-            animation-delay: 5s;
-            animation-fill-mode: forwards;
-
+              animation-delay: 5s;
+              animation-fill-mode: forwards;
             }
             &::before {
               content: "x";
@@ -124,7 +130,7 @@ body.home {
           z-index: 1;
           animation: colorSwitch 1s;
           animation-delay: 4s;
-          animation-fill-mode: forwards;  
+          animation-fill-mode: forwards;
         }
 
         img {
@@ -136,11 +142,17 @@ body.home {
           height: 100%;
           object-fit: cover;
           animation: slideImage 1s;
-          animation-fill-mode: forwards;  
+          animation-fill-mode: forwards;
 
-          &:nth-of-type(1) { animation-delay: 4s; }
-          &:nth-of-type(2) { animation-delay: 4.25s; }
-          &:nth-of-type(3) { animation-delay: 4.5s; }
+          &:nth-of-type(1) {
+            animation-delay: 4s;
+          }
+          &:nth-of-type(2) {
+            animation-delay: 4.25s;
+          }
+          &:nth-of-type(3) {
+            animation-delay: 4.5s;
+          }
         }
       }
     }
@@ -193,8 +205,6 @@ body.home {
   }
 
   section.portfolio {
-  
-
     .portfolio__grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -216,14 +226,13 @@ body.home {
         background-position: 50% 50%;
         border-radius: 15px;
         color: #fff;
-        // overflow: hidden;
         position: relative;
         height: 350px;
-        box-shadow: 0 0 5px rgba(0,0,0,.15);
-        transition: all .4s;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+        transition: all 0.4s;
 
         &:hover {
-          box-shadow: 0 0 25px rgba(0,0,0,.45);
+          box-shadow: 0 0 25px rgba(0, 0, 0, 0.45);
           transform: scale(1.035) rotate(1deg);
 
           img {
@@ -246,8 +255,8 @@ body.home {
         h4 {
           position: relative;
           left: 30px;
-          transform:  rotate(-90deg);
-          text-shadow: 0 0 5px rgba(0,0,0,.15);
+          transform: rotate(-90deg);
+          text-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
           font-size: 35px;
         }
         img {
@@ -256,21 +265,26 @@ body.home {
           max-height: 130%;
           right: 10%;
           top: -15%;
-          filter: drop-shadow(0 0 7px rgba(0,0,0,.15));
-          transition: all .2s;
+          filter: drop-shadow(0 0 7px rgba(0, 0, 0, 0.15));
+          transition: all 0.2s;
         }
-
       }
     }
   }
 
   section.contact {
+    .form-box {
+      padding: 15px;
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: 15px;
+    }
     form {
       label {
         display: block;
         margin-bottom: 5px;
       }
-      input,textarea {
+      input,
+      textarea {
         width: 100%;
         margin-bottom: 15px;
         border: 1px solid #bbbbbb;
@@ -279,6 +293,7 @@ body.home {
         background: #fff;
         color: #000;
         resize: none;
+        outline: none;
       }
       textarea {
         min-height: 200px;
@@ -288,19 +303,19 @@ body.home {
   }
 }
 
-
-@keyframes colorSwitch{
+// ---- Animaties ----
+@keyframes colorSwitch {
   0% {
     color: $main;
   }
   100% {
     color: #fff;
-    text-shadow: 0 0 10px rgba(0,0,0,.35);
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.35);
   }
 }
 @keyframes slideImage {
   0% {
-    top: 100%
+    top: 100%;
   }
   100% {
     top: 0;

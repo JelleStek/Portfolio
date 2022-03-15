@@ -100,7 +100,8 @@
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   overflow-x: hidden;
   font-family: "Poppins", sans-serif;
   color: #154884;
@@ -147,7 +148,7 @@ img.box-image {
   height: 100%;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.23);
   position: relative;
-  z-index: 1;
+  border-radius: 15px;
 }
 
 .blur {
@@ -168,7 +169,7 @@ img.box-image {
   top: -100px;
   width: 400px;
   height: 400px;
-  background: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);
+  background: linear-gradient(90deg, #fc466b 0%, #3f5efb 100%);
   opacity: 0.4;
 }
 
@@ -226,6 +227,7 @@ img.box-image {
   cursor: pointer;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
   border-radius: 3px;
+  display: none;
 }
 #goUp:hover img {
   transform: translateY(-5px);
@@ -617,7 +619,8 @@ body.home section.hero {
 body.home section.hero .hero-title {
   display: inline-block;
 }
-body.home section.hero .hero-title .h1, body.home section.hero .hero-title h1 {
+body.home section.hero .hero-title .h1,
+body.home section.hero .hero-title h1 {
   display: inline-block;
 }
 body.home section.hero .hero-title span.space {
@@ -883,11 +886,17 @@ body.home section.portfolio .portfolio__grid .portfolio__item img {
   filter: drop-shadow(0 0 7px rgba(0, 0, 0, 0.15));
   transition: all 0.2s;
 }
+body.home section.contact .form-box {
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+}
 body.home section.contact form label {
   display: block;
   margin-bottom: 5px;
 }
-body.home section.contact form input, body.home section.contact form textarea {
+body.home section.contact form input,
+body.home section.contact form textarea {
   width: 100%;
   margin-bottom: 15px;
   border: 1px solid #bbbbbb;
@@ -896,6 +905,7 @@ body.home section.contact form input, body.home section.contact form textarea {
   background: #fff;
   color: #000;
   resize: none;
+  outline: none;
 }
 body.home section.contact form textarea {
   min-height: 200px;
@@ -983,7 +993,7 @@ section.cta::before {
   content: "";
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);
+  background: linear-gradient(90deg, #fc466b 0%, #3f5efb 100%);
   opacity: 0.98;
   filter: brightness(0.32);
   position: absolute;

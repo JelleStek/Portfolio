@@ -1,9 +1,20 @@
 $main: #2867b2;
 $gradient: linear-gradient(90deg, #edff7e 0%, #7fefea 100%);
-$gradienttwo: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);
+$gradienttwo: linear-gradient(90deg, #fc466b 0%, #3f5efb 100%);
 $gradientthree: linear-gradient(90deg, #f8ff00 0%, #3ad59f 100%);
-$divider: linear-gradient(90deg, rgba(32, 131, 248, 1) 0%, rgba(0, 0, 0, 0) 100%);
-$clip-path: polygon(50px 0, 100% 0, 100% calc(100% - 50px), calc(100% - 50px) 100%, 0 100%, 0 50px);
+$divider: linear-gradient(
+  90deg,
+  rgba(32, 131, 248, 1) 0%,
+  rgba(0, 0, 0, 0) 100%
+);
+$clip-path: polygon(
+  50px 0,
+  100% 0,
+  100% calc(100% - 50px),
+  calc(100% - 50px) 100%,
+  0 100%,
+  0 50px
+);
 $text-color: #212529;
 
 * {
@@ -12,9 +23,10 @@ $text-color: #212529;
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   overflow-x: hidden;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #154884;
 }
 
@@ -56,9 +68,9 @@ img.box-image {
   object-fit: cover;
   width: 100%;
   height: 100%;
-  box-shadow: 0 0 20px rgba(0, 0, 0, .23);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.23);
   position: relative;
-  z-index: 1;
+  border-radius: 15px;
 }
 .blur {
   position: relative;
@@ -71,25 +83,24 @@ img.box-image {
   z-index: -1;
   overflow: visible;
 }
-.blur.__one::before  {
+.blur.__one::before {
   right: -125px;
   top: -100px;
   width: 400px;
   height: 400px;
   background: $gradienttwo;
-  opacity: .4;
+  opacity: 0.4;
 }
 
-.blur.__two::before  {
+.blur.__two::before {
   width: 500px;
   height: 500px;
   right: -140px;
   top: 20%;
   transform: translateY(-50%);
   background: $gradientthree;
-  opacity: .5;
+  opacity: 0.5;
 }
-
 
 .row {
   padding: 30px 0;
@@ -103,7 +114,7 @@ img.box-image {
 
 .uppercase {
   text-transform: uppercase;
-  opacity: .7;
+  opacity: 0.7;
 }
 
 .mini-title {
@@ -135,8 +146,9 @@ img.box-image {
   right: 30px;
   bottom: 30px;
   cursor: pointer;
-  box-shadow: 0 0 5px rgba(0, 0, 0, .2);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
   border-radius: 3px;
+  display: none;
 
   &:hover {
     img {
@@ -146,10 +158,9 @@ img.box-image {
 
   img {
     position: relative;
-    transition: all .35s;
+    transition: all 0.35s;
   }
 }
-
 
 .show-mobile {
   display: none;

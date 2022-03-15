@@ -158,6 +158,7 @@
             </div>
             <div class="row align-items-center">
                 <div class="col-lg-6">
+                    <div class="form-box">
                     <form method="POST" action="{{route('contact.send')}}" enctype="multipart/form-data">
                         @csrf
                         <div class="row">
@@ -187,6 +188,7 @@
                             </div>
                         </div>
                     </form>
+                    </div>
                 </div>
                 <div class="col-lg-6">
                     <div class="content">
