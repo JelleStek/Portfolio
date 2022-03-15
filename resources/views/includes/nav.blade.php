@@ -1,6 +1,6 @@
 <header id="header">
     <div class="container">
-        <div class="row">
+        <div class="row align-items-center">
             <div class="col-md-3 col-10">
                 <div class="branding">
                     <h3><a href="/">Jelle Stekelenburg<span class="highlight">.</span></a></h3>

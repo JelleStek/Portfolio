@@ -162,6 +162,23 @@ body.home {
     padding: 70px 0;
     position: relative;
     overflow: hidden;
+    margin: 0 !important;
+
+    .image-container {
+      position: relative;
+      .behind-animation {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        z-index: -1;
+        filter: drop-shadow(0 0 15px $main);
+        transform: translate(-100%, -50%) scale(1.7) rotate(360deg) !important;
+
+        &.reverse {
+          transform: translate(-0%, -50%) scale(1.7) rotate(360deg) !important;
+        }
+      }
+    }
 
     &::before {
       content: "";
@@ -277,6 +294,7 @@ body.home {
       padding: 15px;
       background: rgba(255, 255, 255, 0.9);
       border-radius: 15px;
+      box-shadow: -5px -5px 5px rgba(0, 0, 0, 0.05);
     }
     form {
       label {

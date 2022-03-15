@@ -458,7 +458,7 @@ header#header .row {
 header#header .branding h3 {
   margin: 0 !important;
   color: #fff;
-  font-size: 1.85rem;
+  font-size: 1.3rem;
   font-weight: 700;
 }
 @media only screen and (max-width: 950px) {
@@ -468,14 +468,16 @@ header#header .branding h3 {
 }
 header#header.scroll {
   background: rgba(255, 255, 255, 0.5);
-  backdrop-filter: blur(0.8rem);
-  -webkit-backdrop-filter: blur(0.8rem);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
-header#header.scroll h3, header#header.scroll a {
+header#header.scroll h3,
+header#header.scroll a {
   color: #333333 !important;
 }
-header#header h3, header#header a {
+header#header h3,
+header#header a {
   color: #333333 !important;
 }
 header#header .menu {
@@ -786,6 +788,21 @@ body.home section.intro {
   padding: 70px 0;
   position: relative;
   overflow: hidden;
+  margin: 0 !important;
+}
+body.home section.intro .image-container {
+  position: relative;
+}
+body.home section.intro .image-container .behind-animation {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: -1;
+  filter: drop-shadow(0 0 15px #2867b2);
+  transform: translate(-100%, -50%) scale(1.7) rotate(360deg) !important;
+}
+body.home section.intro .image-container .behind-animation.reverse {
+  transform: translate(0%, -50%) scale(1.7) rotate(360deg) !important;
 }
 body.home section.intro::before {
   content: "";
@@ -890,6 +907,7 @@ body.home section.contact .form-box {
   padding: 15px;
   background: rgba(255, 255, 255, 0.9);
   border-radius: 15px;
+  box-shadow: -5px -5px 5px rgba(0, 0, 0, 0.05);
 }
 body.home section.contact form label {
   display: block;

@@ -65,8 +65,12 @@
             <div class="row align-items-center">
 
                 <div class="col-lg-6 position-relative">
-                    <div class="blur __one"><img class="box-image" src="{{asset('images/homepage/css.jpg')}}"
-                                                 alt="css self made code"></div>
+                    <div class="image-container">
+                        <div class="blur __one">
+                            <img class="box-image" src="{{asset('/images/homepage/css.jpg')}}" alt="Person programming">
+                            <img class="behind-animation" src="/images/global/green_png.png" alt="Weird item going around">
+                        </div>
+                    </div>
                 </div>
                 <div class="col-lg-6">
                     <div class="content">
@@ -92,8 +96,12 @@
                     </div>
                 </div>
                 <div class="col-lg-6 position-relative">
-                    <div class="blur __two"><img class="box-image blur __two" src="{{asset('images/homepage/js.jpg')}}"
-                                                 alt="Javascript self made code"></div>
+                    <div class="image-container">
+                        <div class="blur __two">
+                            <img class="box-image blur __two" src="{{asset('images/homepage/js.jpg')}}" alt="Javascript code">
+                            <img class="behind-animation reverse" src="{{asset('/images/global/blue_png.png')}}" alt="Old head">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
