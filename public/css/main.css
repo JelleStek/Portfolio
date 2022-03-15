@@ -801,6 +801,11 @@ body.home section.intro .image-container .behind-animation {
   filter: drop-shadow(0 0 15px #2867b2);
   transform: translate(-100%, -50%) scale(1.7) rotate(360deg) !important;
 }
+@media (max-width: 1000px) {
+  body.home section.intro .image-container .behind-animation {
+    opacity: 0.3;
+  }
+}
 body.home section.intro .image-container .behind-animation.reverse {
   transform: translate(0%, -50%) scale(1.7) rotate(360deg) !important;
 }

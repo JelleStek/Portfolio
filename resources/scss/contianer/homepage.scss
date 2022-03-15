@@ -173,6 +173,9 @@ body.home {
         z-index: -1;
         filter: drop-shadow(0 0 15px $main);
         transform: translate(-100%, -50%) scale(1.7) rotate(360deg) !important;
+        @media (max-width: 1000px) {
+          opacity: 0.3;
+        }
 
         &.reverse {
           transform: translate(-0%, -50%) scale(1.7) rotate(360deg) !important;
