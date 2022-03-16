@@ -642,7 +642,8 @@ body.home section.hero .browser {
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
   background: #f2f2f2;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: visible;
   display: flex;
   flex-direction: column;
 }
@@ -740,7 +741,6 @@ body.home section.hero .browser .__nav .flex-grid .tab p {
 }
 body.home section.hero .browser .__body {
   position: relative;
-  overflow: hidden;
   padding-bottom: 56%;
 }
 body.home section.hero .browser .__body .content {
@@ -750,7 +750,7 @@ body.home section.hero .browser .__body .content {
   max-width: 100%;
   text-align: center;
   color: #2867b2;
-  z-index: 1;
+  z-index: 2;
   -webkit-animation: colorSwitch 1s;
           animation: colorSwitch 1s;
   -webkit-animation-delay: 4s;
@@ -761,8 +761,8 @@ body.home section.hero .browser .__body .content {
 body.home section.hero .browser .__body img {
   position: absolute;
   z-index: 0;
-  top: 100%;
-  left: 0;
+  top: 0;
+  left: -100%;
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -956,18 +956,18 @@ body.home section.contact form textarea {
 }
 @-webkit-keyframes slideImage {
   0% {
-    top: 100%;
+    left: -100%;
   }
   100% {
-    top: 0;
+    left: 0;
   }
 }
 @keyframes slideImage {
   0% {
-    top: 100%;
+    left: -100%;
   }
   100% {
-    top: 0;
+    left: 0;
   }
 }
 @-webkit-keyframes tabSwitch__color {

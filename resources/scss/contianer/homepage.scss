@@ -27,7 +27,8 @@ body.home {
       border-radius: 8px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
       background: #f2f2f2;
-      overflow: hidden;
+      overflow-x: hidden;
+      overflow-y: visible;
       display: flex;
       flex-direction: column;
 
@@ -117,7 +118,7 @@ body.home {
       }
       .__body {
         position: relative;
-        overflow: hidden;
+        // overflow: hidden;
         padding-bottom: 56%;
 
         .content {
@@ -127,7 +128,7 @@ body.home {
           max-width: 100%;
           text-align: center;
           color: $main;
-          z-index: 1;
+          z-index: 2;
           animation: colorSwitch 1s;
           animation-delay: 4s;
           animation-fill-mode: forwards;
@@ -136,8 +137,8 @@ body.home {
         img {
           position: absolute;
           z-index: 0;
-          top: 100%;
-          left: 0;
+          top: 0;
+          left: -100%;
           width: 100%;
           height: 100%;
           object-fit: cover;
@@ -336,10 +337,10 @@ body.home {
 }
 @keyframes slideImage {
   0% {
-    top: 100%;
+    left: -100%;
   }
   100% {
-    top: 0;
+    left: 0;
   }
 }
 @keyframes tabSwitch__color {
