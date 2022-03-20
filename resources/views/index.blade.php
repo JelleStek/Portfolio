@@ -194,12 +194,8 @@
                                 <textarea name="message" id="message"></textarea>
                             </div>
                             <div class="col-12">
-                                <!-- <button name="submit" type="submit" class="btn" id="send_message">Verstuur</button> -->
-                                <button class="g-recaptcha" 
-        data-sitekey="{{env('RECAPTCHA_SITE_KEY')}}" 
-        data-callback='onSubmit' 
-        data-action='submit'>Submit</button>
-
+                                <div class="g-recaptcha" data-sitekey="{{env('RECAPTCHA_SITE_KEY')}}"></div>
+                                <button name="submit" type="submit" class="btn" id="send_message">Verstuur</button>
                             </div>
                         </div>
                     </form>

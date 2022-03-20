@@ -56,12 +56,6 @@
 <script defer src="{{asset('/js/main.js')}}"></script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-NXH5Q98JD4"></script>
 <script src="https://www.google.com/recaptcha/api.js"></script>
-<script src="https://www.google.com/recaptcha/api.js"></script>
-<script>
-function onSubmit(token) {
-    document.getElementById("ContactForm").submit();
-}
-</script>
 <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
