@@ -1,7 +1,7 @@
 body.home {
   section.hero {
-    padding: 150px 0 100px 0;
-    overflow: visible;
+    padding: 150px 0;
+    overflow: hidden;
     .hero-title {
       display: inline-block;
       .h1,
@@ -12,13 +12,35 @@ body.home {
         display: inline-block;
       }
     }
-    p {
-      padding: 20px 0;
-      font-size: 1.3rem;
-    }
     @media only screen and (max-width: 1200px) {
       p {
         font-size: 1rem;
+      }
+    }
+    img.back__slide {
+      position: absolute;
+      z-index: 0;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      animation: slideImage 1s;
+      animation-fill-mode: forwards;
+      animation-delay: 4.5s;
+    }
+    .holder {
+      position: relative;
+
+      &::before {
+        content: "";
+        height: 200%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: calc(-100% - 10px);
+        background-color: #fff;
+        z-index: 1;
       }
     }
 
@@ -118,7 +140,7 @@ body.home {
       }
       .__body {
         position: relative;
-        // overflow: hidden;
+        overflow: hidden;
         padding-bottom: 56%;
 
         .content {
@@ -153,6 +175,7 @@ body.home {
           }
           &:nth-of-type(3) {
             animation-delay: 4.5s;
+            height: auto !important;
           }
         }
       }
@@ -320,6 +343,10 @@ body.home {
       textarea {
         min-height: 200px;
         height: auto;
+      }
+      button {
+        // display: none;
+        margin-top: 10px;
       }
     }
   }

@@ -13,6 +13,7 @@ class ContactController extends Controller
     }
 
     public function sendEmail(Request $request) {
+
         $details = [
             'name'      => $request->name,
             'subject'   => $request->subject,

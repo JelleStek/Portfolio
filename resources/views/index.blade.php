@@ -16,28 +16,30 @@
                     </div>
                 </div> -->
                 <div class="col-lg-9 col-12 hide-mobile">
-                    <div class="browser">
-                        <div class="__nav">
-                            <div class="flex-grid">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <div class="tab">
-                                    <p>Portfolio - Jelle Stekelenburg</p>
+                    <div class="holder">
+                        <div class="browser">
+                            <div class="__nav">
+                                <div class="flex-grid">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <div class="tab">
+                                        <p>Portfolio - Jelle Stekelenburg</p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="__body">
-                            <div class="content">
-                                <div class="hero-title"><h2 class="h1">Hoi! Ik ben <span class="space"></span></h2>
-                                <h1>Jelle Stekelenburg,</h1><span class="space"></span>
-                                <h2 class="h1"> een developer in de Amsterdam regio</h2></div>
-                                <p>Ik ben een Front-end developer met 4 jaar ervaring.</p>
+                            <div class="__body">
+                                <div class="content">
+                                    <div class="hero-title"><h2 class="h1">Hoi! Ik ben <span class="space"></span></h2>
+                                    <h1>Jelle Stekelenburg,</h1><span class="space"></span>
+                                    <h2 class="h1"> een front-end developer in regio Amsterdam <span class="punt">.</span> </h2></div>
+                                </div>
+                                <img src="{{asset('/images/homepage/slide_3.jpg')}}" alt="">
+                                <img src="{{asset('/images/homepage/slide_2.jpg')}}" alt="">
+                                <img src="{{asset('/images/homepage/slide_1.jpg')}}" alt="">
                             </div>
-                            <img src="{{asset('/images/homepage/slide_3.jpg')}}" alt="">
-                            <img src="{{asset('/images/homepage/slide_2.jpg')}}" alt="">
-                            <img src="{{asset('/images/homepage/slide_1.jpg')}}" alt="">
                         </div>
+                        <img class="back__slide" src="{{asset('/images/homepage/slide.png')}}" alt="">
                     </div>
                 </div>
                 <div class="col-12 show-mobile">
@@ -192,7 +194,14 @@
                                 <textarea name="message" id="message"></textarea>
                             </div>
                             <div class="col-12">
-                                <button name="submit" type="submit" class="btn">Verstuur</button>
+                                <div class="g-recaptcha" data-sitekey="{{env('RECAPTCHA_SITE_KEY')}}">
+                                    @if($errors->has('g-recaptcha-response'))
+                                        <span class="invalid-feedback" style="display: block">
+                                            <strong>{{$errors->first('g-captcha-response')}}</strong>
+                                        </span>
+                                    @endif
+                                </div>
+                                <button name="submit" type="submit" class="btn" id="send_message">Verstuur</button>
                             </div>
                         </div>
                     </form>
@@ -210,5 +219,4 @@
     </section>
 
 
-
-@endsection
+    @endsection

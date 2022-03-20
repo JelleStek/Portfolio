@@ -2099,52 +2099,56 @@ window.onscroll = function () {
 
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    $('header').addClass('scroll');
+    $("header").addClass("scroll");
   } else {
-    $('header').removeClass('scroll');
+    $("header").removeClass("scroll");
   }
 }
 
-if (window.location.pathname == '/') {
-  $('#home').addClass('active');
-} else if (window.location.pathname == '/over-mij') {
-  $('#about').addClass('active');
+if (window.location.pathname == "/") {
+  $("#home").addClass("active");
+} else if (window.location.pathname == "/over-mij") {
+  $("#about").addClass("active");
 }
 
 var goToTop = function goToTop() {
   return window.scrollTo(0, 0);
 };
 
-var gpUp = document.getElementById('goUp');
-gpUp.addEventListener('click', function () {
+var gpUp = document.getElementById("goUp");
+gpUp.addEventListener("click", function () {
   goToTop();
 }); //Check wat de width van de website is en geef eventuele class voor mobile menu
 
 (function () {
   if (document.body.clientWidth < 950) {
-    $('#header').addClass('mobile');
+    $("#header").addClass("mobile");
   }
 })(); // resize website? check voor hamburger menu
 
 
 $(window).resize(function () {
   if (document.body.clientWidth <= 950) {
-    $('#header').addClass('mobile');
+    $("#header").addClass("mobile");
   } else if (document.body.clientWidth > 950) {
-    $('#header').removeClass('mobile');
+    $("#header").removeClass("mobile");
   }
 });
-$('#hamburger-toggle').on('click', function () {
-  $('#hamburger-toggle').toggleClass('open');
-  $('aside#menu').toggleClass('toggle');
-  $('#hamburger-toggle span').toggleClass('toggle');
+$("#hamburger-toggle").on("click", function () {
+  $("#hamburger-toggle").toggleClass("open");
+  $("aside#menu").toggleClass("toggle");
+  $("#hamburger-toggle span").toggleClass("toggle");
 });
 
 switch (window.location.pathname) {
   case "/":
-    $('body').addClass('home');
+    $("body").addClass("home");
     break;
 }
+
+(function () {
+  console.log($("#security_question").val());
+})();
 
 /***/ }),
 
