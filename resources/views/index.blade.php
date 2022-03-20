@@ -169,7 +169,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-6">
                     <div class="form-box">
-                    <form method="POST" action="{{route('contact.send')}}" enctype="multipart/form-data">
+                    <form method="POST" action="{{route('contact.send')}}" enctype="multipart/form-data" id="ContactForm">
                         @csrf
                         <div class="row">
                             <div class="col-md-6">
@@ -194,14 +194,12 @@
                                 <textarea name="message" id="message"></textarea>
                             </div>
                             <div class="col-12">
-                                <div class="g-recaptcha" data-sitekey="6Ld1PuIeAAAAALp_D9ri6HwdDJdwogy0266RuCfN">
-                                    @if($errors->has('g-recaptcha-response'))
-                                        <span class="invalid-feedback" style="display: block">
-                                            <strong>{{$errors->first('g-captcha-response')}}</strong>
-                                        </span>
-                                    @endif
-                                </div>
-                                <button name="submit" type="submit" class="btn" id="send_message">Verstuur</button>
+                                <!-- <button name="submit" type="submit" class="btn" id="send_message">Verstuur</button> -->
+                                <button class="g-recaptcha" 
+        data-sitekey="{{env('RECAPTCHA_SITE_KEY')}}" 
+        data-callback='onSubmit' 
+        data-action='submit'>Submit</button>
+
                             </div>
                         </div>
                     </form>
