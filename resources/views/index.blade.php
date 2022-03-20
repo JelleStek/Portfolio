@@ -194,7 +194,7 @@
                                 <textarea name="message" id="message"></textarea>
                             </div>
                             <div class="col-12">
-                                <div class="g-recaptcha" data-sitekey="{{env('RECAPTCHA_SITE_KEY')}}">
+                                <div class="g-recaptcha" data-sitekey="6Ld1PuIeAAAAALp_D9ri6HwdDJdwogy0266RuCfN">
                                     @if($errors->has('g-recaptcha-response'))
                                         <span class="invalid-feedback" style="display: block">
                                             <strong>{{$errors->first('g-captcha-response')}}</strong>
