@@ -25,6 +25,7 @@ body.home {
       width: 100%;
       height: auto;
       object-fit: cover;
+      filter: drop-shadow(0 0 7px rgba(0, 0, 0, 0.3));
       animation: slideImage 1s;
       animation-fill-mode: forwards;
       animation-delay: 4.5s;
@@ -317,36 +318,20 @@ body.home {
   }
 
   section.contact {
-    .form-box {
-      padding: 15px;
-      background: rgba(255, 255, 255, 0.9);
-      border-radius: 15px;
-      box-shadow: -5px -5px 5px rgba(0, 0, 0, 0.05);
+    .contact__container {
+      h4 {
+        font-weight: 400;
+      }
     }
-    form {
-      label {
-        display: block;
-        margin-bottom: 5px;
-      }
-      input,
-      textarea {
-        width: 100%;
-        margin-bottom: 15px;
-        border: 1px solid #bbbbbb;
-        padding: 5px 15px;
-        border-radius: 5px;
-        background: #fff;
-        color: #000;
-        resize: none;
-        outline: none;
-      }
-      textarea {
-        min-height: 200px;
-        height: auto;
-      }
-      button {
-        // display: none;
-        margin-top: 10px;
+    .behind-animation {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      z-index: 1;
+      filter: drop-shadow(0 0 15px rgba(0, 0, 0, 0.2));
+      transform: translate(40%, -50%) scale(1) rotate(360deg) !important;
+      @media (max-width: 1000px) {
+        opacity: 0.3;
       }
     }
   }

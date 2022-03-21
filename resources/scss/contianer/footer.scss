@@ -1,0 +1,43 @@
+footer#footer {
+  background: #f2f2f2;
+  //   color: #fff;
+  padding: 50px 0;
+  position: relative;
+
+  .content {
+    padding: 10px 0;
+  }
+  ul {
+    list-style: none;
+    margin: 0 !important;
+    padding: 0 !important;
+
+    li {
+      padding: 3px 0;
+
+      a {
+        transition: all 0.2s;
+        cursor: pointer;
+        position: relative;
+        padding-left: 0;
+        font-weight: 300;
+        font-size: 1.2rem;
+        &:hover {
+          color: #6d7bff;
+          padding-left: 20px;
+          &::before {
+            opacity: 1;
+          }
+        }
+        &::before {
+          position: absolute;
+          left: 0;
+          top: -1px;
+          content: ">";
+          color: inherit;
+          opacity: 0;
+        }
+      }
+    }
+  }
+}

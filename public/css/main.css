@@ -138,7 +138,7 @@ img {
 }
 
 .highlight {
-  color: #2867b2;
+  color: #154884;
 }
 
 img.box-image {
@@ -258,6 +258,30 @@ img.box-image {
   display: none;
 }
 
+.mt-10 {
+  margin-top: 10px;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+.mt-30 {
+  margin-top: 30px;
+}
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.mb-30 {
+  margin-bottom: 30px;
+}
+
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
@@ -332,7 +356,7 @@ h2 .punt {
   padding: 6px 20px;
   display: inline-block;
   border-radius: 999px;
-  border: 1px solid #2867b2;
+  border: 1px solid #154884;
   transition: all 0.2s;
   background: transparent;
   position: relative;
@@ -344,7 +368,7 @@ h2 .punt {
   padding: 6px 40px 6px 20px;
 }
 .btn:hover::after {
-  color: #2867b2;
+  color: #154884;
 }
 .btn::after {
   content: ">";
@@ -423,7 +447,7 @@ a.pull-out span::before {
   transform: translateX(-50%) rotate(45deg);
 }
 a.pull-out:hover {
-  color: #2867b2;
+  color: #154884;
   cursor: pointer;
 }
 a.pull-out:hover span {
@@ -502,7 +526,7 @@ header#header .menu ul li ::after {
   z-index: 2;
   position: absolute;
   width: 40px;
-  background: #2867b2;
+  background: #154884;
   height: 4px;
   left: -40px;
   bottom: -2px;
@@ -520,7 +544,7 @@ header#header .menu ul li.active::after {
   z-index: 2;
   position: absolute;
   width: 40px;
-  background: #2867b2;
+  background: #154884;
   height: 4px;
   left: 0 !important;
   bottom: -2px;
@@ -642,6 +666,7 @@ body.home section.hero img.back__slide {
   height: auto;
   -o-object-fit: cover;
      object-fit: cover;
+  filter: drop-shadow(0 0 7px rgba(0, 0, 0, 0.3));
   -webkit-animation: slideImage 1s;
           animation: slideImage 1s;
   -webkit-animation-fill-mode: forwards;
@@ -775,7 +800,7 @@ body.home section.hero .browser .__body .content {
   transform: translateY(-50%);
   max-width: 100%;
   text-align: center;
-  color: #2867b2;
+  color: #154884;
   z-index: 2;
   -webkit-animation: colorSwitch 1s;
           animation: colorSwitch 1s;
@@ -825,7 +850,7 @@ body.home section.intro .image-container .behind-animation {
   left: 50%;
   top: 50%;
   z-index: -1;
-  filter: drop-shadow(0 0 15px #2867b2);
+  filter: drop-shadow(0 0 15px #154884);
   transform: translate(-100%, -50%) scale(1.7) rotate(360deg) !important;
 }
 @media (max-width: 1000px) {
@@ -935,39 +960,26 @@ body.home section.portfolio .portfolio__grid .portfolio__item img {
   filter: drop-shadow(0 0 7px rgba(0, 0, 0, 0.15));
   transition: all 0.2s;
 }
-body.home section.contact .form-box {
-  padding: 15px;
-  background: rgba(255, 255, 255, 0.9);
-  border-radius: 15px;
-  box-shadow: -5px -5px 5px rgba(0, 0, 0, 0.05);
+body.home section.contact .contact__container h4 {
+  font-weight: 400;
 }
-body.home section.contact form label {
-  display: block;
-  margin-bottom: 5px;
+body.home section.contact .behind-animation {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  filter: drop-shadow(0 0 15px rgba(0, 0, 0, 0.2));
+  transform: translate(40%, -50%) scale(1) rotate(360deg) !important;
 }
-body.home section.contact form input,
-body.home section.contact form textarea {
-  width: 100%;
-  margin-bottom: 15px;
-  border: 1px solid #bbbbbb;
-  padding: 5px 15px;
-  border-radius: 5px;
-  background: #fff;
-  color: #000;
-  resize: none;
-  outline: none;
-}
-body.home section.contact form textarea {
-  min-height: 200px;
-  height: auto;
-}
-body.home section.contact form button {
-  margin-top: 10px;
+@media (max-width: 1000px) {
+  body.home section.contact .behind-animation {
+    opacity: 0.3;
+  }
 }
 
 @-webkit-keyframes colorSwitch {
   0% {
-    color: #2867b2;
+    color: #154884;
   }
   100% {
     color: #fff;
@@ -977,7 +989,7 @@ body.home section.contact form button {
 
 @keyframes colorSwitch {
   0% {
-    color: #2867b2;
+    color: #154884;
   }
   100% {
     color: #fff;
@@ -1149,4 +1161,44 @@ section.experiences .__item p.number {
   font-size: 1.6rem;
   font-weight: 800;
   opacity: 0.5;
+}
+
+footer#footer {
+  background: #f2f2f2;
+  padding: 50px 0;
+  position: relative;
+}
+footer#footer .content {
+  padding: 10px 0;
+}
+footer#footer ul {
+  list-style: none;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+footer#footer ul li {
+  padding: 3px 0;
+}
+footer#footer ul li a {
+  transition: all 0.2s;
+  cursor: pointer;
+  position: relative;
+  padding-left: 0;
+  font-weight: 300;
+  font-size: 1.2rem;
+}
+footer#footer ul li a:hover {
+  color: #6d7bff;
+  padding-left: 20px;
+}
+footer#footer ul li a:hover::before {
+  opacity: 1;
+}
+footer#footer ul li a::before {
+  position: absolute;
+  left: 0;
+  top: -1px;
+  content: ">";
+  color: inherit;
+  opacity: 0;
 }

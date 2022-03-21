@@ -30,9 +30,9 @@
                             </div>
                             <div class="__body">
                                 <div class="content">
-                                    <div class="hero-title"><h2 class="h1">Hoi! Ik ben <span class="space"></span></h2>
-                                    <h1>Jelle Stekelenburg,</h1><span class="space"></span>
-                                    <h2 class="h1"> een front-end developer in regio Amsterdam <span class="punt">.</span> </h2></div>
+                                    <div class="hero-title"><h3 class="h1">Hoi! Ik ben <span class="space"></span></h3>
+                                    <h1>Jelle Stekelenburg.</h1><span class="space"></span>
+                                    <h3 class="h1"> Een front-end developer in regio Amsterdam <span class="punt">.</span> </h3></div>
                                 </div>
                                 <img src="{{asset('/images/homepage/slide_3.jpg')}}" alt="">
                                 <img src="{{asset('/images/homepage/slide_2.jpg')}}" alt="">
@@ -43,9 +43,9 @@
                     </div>
                 </div>
                 <div class="col-12 show-mobile">
-                    <div class="hero-title"><h2 class="h1">Hoi! Ik ben <span class="space"></span></h2>
+                    <div class="hero-title"><h3 class="h1">Hoi! Ik ben <span class="space"></span></h3>
                     <h1>Jelle Stekelenburg,</h1><span class="space"></span>
-                    <h2 class="h1"> een developer in de Amsterdam regio</h2></div>
+                    <h3 class="h1"> een developer in de Amsterdam regio</h3></div>
                     <p>Ik ben een Front-end developer met 4 jaar ervaring.</p>
                 </div>
             </div>
@@ -136,20 +136,20 @@
                             </a>
 
                             <a href="">
-                                <div class="portfolio__item muiderslot" style="background-image: url({{asset('/images/portfolio/ian_background.jpg')}}) ">
-                                    <div class="__title">
-                                    <h4>Ian<span style="margin-left:13px"></span>Remeijsen</h4>
-                                    </div>
-                                    <img src="{{asset('/images/portfolio/ian.png')}}" alt="">
-                                </div>
-                            </a>
-
-                            <a href="">
                                 <div class="portfolio__item muiderslot" data style="background-image: url({{asset('/images/portfolio/bluetravel_background.jpg')}}) ">
                                     <div class="__title">
                                         <h4>BLUEtravel</h4>
                                     </div>
                                     <img src="{{asset('/images/portfolio/bluetravel.png')}}" alt="">
+                                </div>
+                            </a>
+
+                            <a href="">
+                                <div class="portfolio__item muiderslot" style="background-image: url({{asset('/images/portfolio/ian_background.jpg')}}) ">
+                                    <div class="__title">
+                                    <h4>Ian<span style="margin-left:13px"></span>Remeijsen</h4>
+                                    </div>
+                                    <img src="{{asset('/images/portfolio/ian.png')}}" alt="">
                                 </div>
                             </a>
 
@@ -159,58 +159,29 @@
             </div>
     </section>
 
-    <!-- <section class="contact">
+    <section class="contact">
         <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <h2>Neem contact op<span class="punt">.</span></h2>
-                </div>
-            </div>
+        
             <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <div class="form-box">
-                    <form method="POST" action="{{route('contact.send')}}" enctype="multipart/form-data" id="ContactForm">
-                        @csrf
-                        <div class="row">
-                            <div class="col-md-6">
-                                <label for="name">Naam*</label>
-                                <input type="text" id="name" name="name">
-                            </div>
-                            <div class="col-md-6">
-                                <label for="subject">Onderwerp*</label>
-                                <input type="text" id="subject" name="subject">
-                            </div>
-                            <div class="col-md-6">
-                                <div class="blur __two"></div>
-                                <label for="email">Emailadres*</label>
-                                <input type="email" id="email" name="email">
-                            </div>
-                            <div class="col-md-6">
-                                <label for="tel">Telefoonnummer</label>
-                                <input type="tel" id="tel" name="tel">
-                            </div>
-                            <div class="col-12">
-                                <label for="message"></label>
-                                <textarea name="message" id="message"></textarea>
-                            </div>
-                            <div class="col-12">
-                                <div class="g-recaptcha" data-sitekey="{{env('RECAPTCHA_SITE_KEY')}}"></div>
-                                <button name="submit" type="submit" class="btn" id="send_message">Verstuur</button>
-                            </div>
-                        </div>
-                    </form>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="content">
+                <div class="col-lg-4">
+                <h2 class="mb-30">Neem contact op<span class="punt">.</span></h2>
+                    <div class="contact__container">
+                        <h4>Mij een bericht sturen?</h4>
+                        <p>Contact opnemen is gemakkelijk en veilig, druk op de onderstaande klop om naar het contact formulier te gaan.</p>
+                        <a href="" class="btn mt-10">Neem contact op</a>
+                        <div class="mt-30"></div>
                         <h4>Project starten?</h4>
                         <p>Tijd voor iets nieuws? vraag een offerte aan via nwave of kom in contact!</p>
-                        <a href="https://nwave.nl" class="btn">Naar nwave</a>
+                        <a href="https://nwave.nl" class="btn mt-10">Naar nwave</a>
                     </div>
+                </div>
+                <div class="col-lg-6 offset-lg-2 position-relative">
+                    <img src="{{asset('/images/homepage/contact-image.jpg')}}" alt="" class="box-image">
+                    <img class="behind-animation" src="/images/global/hand.png" alt="Weird item going around">
                 </div>
             </div>
         </div>
-    </section> -->
+    </section>
 
 
     @endsection

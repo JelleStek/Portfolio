@@ -19,13 +19,15 @@
 </div>
 <main id="main" v-cloak>
 
-    @include('includes/nav')
+    @include('includes.nav')
 
     @yield('content')
     
     <div id="goUp">
         <img src="{{asset('/images/global/up-arrow.png')}}" alt="">
     </div>
+
+    @include('includes.footer')
 
 </main>
 <script src="https://unpkg.com/vue@next"></script>
