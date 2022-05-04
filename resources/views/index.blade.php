@@ -56,7 +56,7 @@
             <div class="row justify-content-center">
                 <div class="col-9 text-center">
                     <h5 class="uppercase">Wat doe ik?</h5>
-                    <h2>Mijn main skills<span class="punt">.</span></h2>
+                    <h2 class="title-slider">Mijn main skills<span class="punt">.</span></h2>
                 </div>
                 <div class="col-9 text-center">
                     <div class="intro-text">
@@ -109,7 +109,7 @@
         </div>
     </section>
 
-    @include('includes.cta');
+    @include('includes.cta')
 
     <section class="portfolio">
         <div class="container">
@@ -117,7 +117,7 @@
                 <div class="col-12">
                     <div class="title">
                         <div class="blur __one">
-                            <h2>Mijn laatste werk<span class="punt">.</span></h2>
+                            <h2 class="title-slider two">Mijn laatste werk<span class="punt">.</span></h2>
                         </div>
                     </div>
                 </div>
@@ -164,7 +164,7 @@
         
             <div class="row align-items-center">
                 <div class="col-lg-4">
-                <h2 class="mb-30">Neem contact op<span class="punt">.</span></h2>
+                <h2 class="mb-30 title-slider three">Neem contact op<span class="punt">.</span></h2>
                     <div class="contact__container">
                         <h4>Mij een bericht sturen?</h4>
                         <p>Contact opnemen is gemakkelijk en veilig, druk op de onderstaande klop om naar het contact formulier te gaan.</p>

@@ -51,49 +51,6 @@
   }
 }
 
-@-webkit-keyframes fade {
-  0% {
-    opacity: 0;
-    bottom: 70px;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    bottom: 20px;
-  }
-}
-
-@keyframes fade {
-  0% {
-    opacity: 0;
-    bottom: 70px;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    bottom: 20px;
-  }
-}
-@-webkit-keyframes hero-background {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-@keyframes hero-background {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
 * {
   padding: 0;
   margin: 0;
@@ -282,7 +239,118 @@ img.box-image {
   margin-bottom: 30px;
 }
 
-h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p {
+@-webkit-keyframes fade {
+  0% {
+    opacity: 0;
+    bottom: 70px;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    bottom: 20px;
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+    bottom: 70px;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    bottom: 20px;
+  }
+}
+@-webkit-keyframes hero-background {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes hero-background {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes title-slider__text {
+  0% {
+    color: transparent;
+  }
+  70% {
+    color: transparent;
+  }
+  71% {
+    color: inherit;
+  }
+  100% {
+    color: inherit;
+  }
+}
+@keyframes title-slider__text {
+  0% {
+    color: transparent;
+  }
+  70% {
+    color: transparent;
+  }
+  71% {
+    color: inherit;
+  }
+  100% {
+    color: inherit;
+  }
+}
+@-webkit-keyframes title-slider__before {
+  0% {
+    left: -100%;
+  }
+  70% {
+    left: 0;
+  }
+  80% {
+    left: 0;
+  }
+  100% {
+    left: 100%;
+  }
+}
+@keyframes title-slider__before {
+  0% {
+    left: -100%;
+  }
+  70% {
+    left: 0;
+  }
+  80% {
+    left: 0;
+  }
+  100% {
+    left: 100%;
+  }
+}
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6,
+p {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -290,68 +358,111 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p {
   font-weight: 700;
 }
 
-h1, .h1 {
+h1,
+.h1 {
   font-size: 4rem;
 }
 
-h2, .h2 {
+h2,
+.h2 {
   font-size: 2.9rem;
 }
 
-h3, .h3 {
+h3,
+.h3 {
   font-size: 2.3rem;
   margin-bottom: 15px;
 }
 
-h4, .h4 {
+h4,
+.h4 {
   font-size: 2rem;
 }
 
-p, .p {
+p,
+.p {
   font-size: 1rem;
   font-weight: 400;
 }
 
 @media only screen and (max-width: 1200px) {
-  h1, .h1 {
+  h1,
+.h1 {
     font-size: 2.3rem;
   }
 }
 h2 .punt {
-  position: absolute;
+  position: relative;
   -webkit-animation: up-down 1.5s infinite;
           animation: up-down 1.5s infinite;
 }
 
 @-webkit-keyframes up-down {
   0% {
-    transform: translateY(0);
+    top: 0;
   }
   25% {
-    transform: translateY(0);
+    top: 0;
   }
   75% {
-    transform: translateY(-10px);
+    top: -10px;
   }
   100% {
-    transform: translateY(0);
+    top: 0;
   }
 }
 
 @keyframes up-down {
   0% {
-    transform: translateY(0);
+    top: 0;
   }
   25% {
-    transform: translateY(0);
+    top: 0;
   }
   75% {
-    transform: translateY(-10px);
+    top: -10px;
   }
   100% {
-    transform: translateY(0);
+    top: 0;
   }
 }
+.title-slider {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.title-slider.animate,
+.title-slider.animate.two,
+.title-slider.animate.three {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+  -webkit-animation: title-slider__text 1.75s;
+          animation: title-slider__text 1.75s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.title-slider::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: -100%;
+  background-color: #154884;
+}
+
+.title-slider.animate::before,
+.title-slider.animate.two::before,
+.title-slider.animate.three::before {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+  -webkit-animation: title-slider__before 1.75s;
+          animation: title-slider__before 1.75s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
 .btn {
   padding: 6px 20px;
   display: inline-block;

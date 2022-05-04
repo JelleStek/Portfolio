@@ -1,52 +1,98 @@
-h1,.h1,h2,.h2,h3,.h3,h4,.h4,h5,.h5,h6,.h6,p {
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6,
+p {
   margin: 0;
   // font-family: 'Podkova', serif;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 700;
 }
-h1,.h1 {
+h1,
+.h1 {
   font-size: 4rem;
 }
-h2,.h2 {
+h2,
+.h2 {
   font-size: 2.9rem;
 }
-h3,.h3 {
+h3,
+.h3 {
   font-size: 2.3rem;
   margin-bottom: 15px;
 }
-h4,.h4 {
+h4,
+.h4 {
   font-size: 2rem;
 }
-p,.p {
+p,
+.p {
   font-size: 1rem;
   font-weight: 400;
 }
 
 @media only screen and (max-width: 1200px) {
-  h1,.h1 {
+  h1,
+  .h1 {
     font-size: 2.3rem;
   }
 }
 
 h2 .punt {
-  position: absolute;
+  position: relative;
   animation: up-down 1.5s infinite;
 }
 @keyframes up-down {
   0% {
-    transform: translateY(0);
+    top: 0;
   }
   25% {
-    transform: translateY(0);
+    top: 0;
   }
   75% {
-    transform: translateY(-10px);
+    top: -10px;
   }
   100% {
-    transform: translateY(0);
+    top: 0;
   }
+}
+
+.title-slider {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+.title-slider.animate,
+.title-slider.animate.two,
+.title-slider.animate.three {
+  animation-delay: 0.5s;
+  animation: title-slider__text 1.75s;
+  animation-fill-mode: forwards;
+}
+.title-slider::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: -100%;
+  background-color: $main;
+}
+.title-slider.animate::before,
+.title-slider.animate.two::before,
+.title-slider.animate.three::before {
+  animation-delay: 0.5s;
+  animation: title-slider__before 1.75s;
+  animation-fill-mode: forwards;
 }

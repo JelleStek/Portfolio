@@ -8,7 +8,7 @@
   }
   100% {
     opacity: 0;
-    bottom: 20px
+    bottom: 20px;
   }
 }
 @keyframes hero-background {
@@ -17,5 +17,33 @@
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+@keyframes title-slider__text {
+  0% {
+    color: transparent;
+  }
+  70% {
+    color: transparent;
+  }
+  71% {
+    color: inherit;
+  }
+  100% {
+    color: inherit;
+  }
+}
+@keyframes title-slider__before {
+  0% {
+    left: -100%;
+  }
+  70% {
+    left: 0;
+  }
+  80% {
+    left: 0;
+  }
+  100% {
+    left: 100%;
   }
 }
