@@ -15,7 +15,7 @@ header#header {
   .branding {
     h3 {
       margin: 0 !important;
-      color: #fff;
+      color: #333;
       font-size: 1.3rem;
       font-weight: 700;
     }
@@ -34,13 +34,14 @@ header#header {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
     h3,
     a {
-      color: #333333 !important;
+      color: #333 !important;
     }
   }
 
   h3,
   a {
-    color: #333333 !important;
+    color: #333;
+    animation: invisable_first 1.5s;
   }
 
   .menu {

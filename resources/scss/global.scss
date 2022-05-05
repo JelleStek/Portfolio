@@ -24,7 +24,8 @@ $text-color: #212529;
 }
 
 html,
-body {
+body,
+main {
   overflow-x: hidden;
   font-family: "Poppins", sans-serif;
   color: #154884;
@@ -196,4 +197,7 @@ img.box-image {
 }
 .mb-30 {
   margin-bottom: 30px;
+}
+.no-padding {
+  padding: 0;
 }

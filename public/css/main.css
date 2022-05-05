@@ -58,7 +58,8 @@
 }
 
 html,
-body {
+body,
+main {
   overflow-x: hidden;
   font-family: "Poppins", sans-serif;
   color: #154884;
@@ -239,6 +240,10 @@ img.box-image {
   margin-bottom: 30px;
 }
 
+.no-padding {
+  padding: 0;
+}
+
 @-webkit-keyframes fade {
   0% {
     opacity: 0;
@@ -338,6 +343,28 @@ img.box-image {
     left: 100%;
   }
 }
+@-webkit-keyframes invisable_first {
+  0% {
+    color: transparent;
+  }
+  90% {
+    color: transparent;
+  }
+  100% {
+    color: #333;
+  }
+}
+@keyframes invisable_first {
+  0% {
+    color: transparent;
+  }
+  90% {
+    color: transparent;
+  }
+  100% {
+    color: #333;
+  }
+}
 h1,
 .h1,
 h2,
@@ -391,7 +418,7 @@ p,
     font-size: 2.3rem;
   }
 }
-h2 .punt {
+.punt {
   position: relative;
   -webkit-animation: up-down 1.5s infinite;
           animation: up-down 1.5s infinite;
@@ -434,7 +461,8 @@ h2 .punt {
 
 .title-slider.animate,
 .title-slider.animate.two,
-.title-slider.animate.three {
+.title-slider.animate.three,
+.title-slider.static {
   -webkit-animation-delay: 0.5s;
           animation-delay: 0.5s;
   -webkit-animation: title-slider__text 1.75s;
@@ -452,9 +480,14 @@ h2 .punt {
   background-color: #154884;
 }
 
+.title-slider.dark::before {
+  background-color: #333 !important;
+}
+
 .title-slider.animate::before,
 .title-slider.animate.two::before,
-.title-slider.animate.three::before {
+.title-slider.animate.three::before,
+.title-slider.static::before {
   -webkit-animation-delay: 0.5s;
           animation-delay: 0.5s;
   -webkit-animation: title-slider__before 1.75s;
@@ -592,7 +625,7 @@ header#header .row {
 }
 header#header .branding h3 {
   margin: 0 !important;
-  color: #fff;
+  color: #333;
   font-size: 1.3rem;
   font-weight: 700;
 }
@@ -609,11 +642,13 @@ header#header.scroll {
 }
 header#header.scroll h3,
 header#header.scroll a {
-  color: #333333 !important;
+  color: #333 !important;
 }
 header#header h3,
 header#header a {
-  color: #333333 !important;
+  color: #333;
+  -webkit-animation: invisable_first 1.5s;
+          animation: invisable_first 1.5s;
 }
 header#header .menu {
   display: flex;
@@ -1290,7 +1325,7 @@ footer#footer ul {
 footer#footer ul li {
   padding: 3px 0;
 }
-footer#footer ul li a {
+footer#footer ul li * {
   transition: all 0.2s;
   cursor: pointer;
   position: relative;
@@ -1298,18 +1333,28 @@ footer#footer ul li a {
   font-weight: 300;
   font-size: 1.2rem;
 }
-footer#footer ul li a:hover {
+footer#footer ul li *:hover {
   color: #6d7bff;
   padding-left: 20px;
 }
-footer#footer ul li a:hover::before {
+footer#footer ul li *:hover::before {
   opacity: 1;
 }
-footer#footer ul li a::before {
+footer#footer ul li *::before {
   position: absolute;
   left: 0;
   top: -1px;
   content: ">";
   color: inherit;
   opacity: 0;
+}
+footer#footer ul li *.smaller {
+  font-size: 1rem;
+  opacity: 0.8;
+  text-decoration: underline;
+}
+footer#footer .footnote {
+  position: relative;
+  bottom: -30px;
+  opacity: 0.75;
 }

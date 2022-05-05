@@ -15,7 +15,7 @@ footer#footer {
     li {
       padding: 3px 0;
 
-      a {
+      * {
         transition: all 0.2s;
         cursor: pointer;
         position: relative;
@@ -37,7 +37,18 @@ footer#footer {
           color: inherit;
           opacity: 0;
         }
+
+        &.smaller {
+          font-size: 1rem;
+          opacity: 0.8;
+          text-decoration: underline;
+        }
       }
     }
+  }
+  .footnote {
+    position: relative;
+    bottom: -30px;
+    opacity: 0.75;
   }
 }

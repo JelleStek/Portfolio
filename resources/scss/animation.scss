@@ -47,3 +47,14 @@
     left: 100%;
   }
 }
+@keyframes invisable_first {
+  0% {
+    color: transparent;
+  }
+  90% {
+    color: transparent;
+  }
+  100% {
+    color: #333;
+  }
+}

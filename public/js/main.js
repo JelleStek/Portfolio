@@ -2060,7 +2060,7 @@ module.exports = {
   \************************************/
 /***/ (() => {
 
-// Observer one
+// #### First Observer ####
 var observerOne = new IntersectionObserver(function (entries) {
   entries.forEach(function (entry) {
     if (entry.isIntersecting) {
@@ -2069,7 +2069,7 @@ var observerOne = new IntersectionObserver(function (entries) {
     }
   });
 });
-observerOne.observe(document.querySelector(".title-slider")); // Observer two
+observerOne.observe(document.querySelector(".title-slider")); // #### Second Observer ####
 
 var observerTwo = new IntersectionObserver(function (entries) {
   entries.forEach(function (entry) {
@@ -2079,7 +2079,7 @@ var observerTwo = new IntersectionObserver(function (entries) {
     }
   });
 });
-observerTwo.observe(document.querySelector(".title-slider.two")); // Observer three
+observerTwo.observe(document.querySelector(".title-slider.two")); // #### Third Observer ####
 
 var observerThree = new IntersectionObserver(function (entries) {
   entries.forEach(function (entry) {
@@ -2089,7 +2089,17 @@ var observerThree = new IntersectionObserver(function (entries) {
     }
   });
 });
-observerThree.observe(document.querySelector(".title-slider.three"));
+observerThree.observe(document.querySelector(".title-slider.three")); // #### Footer Observer ####
+
+var footerObserver = new IntersectionObserver(function (entries) {
+  entries.forEach(function (entry) {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("animate");
+      return;
+    }
+  });
+});
+footerObserver.observe(document.querySelector(".title-slider.footer"));
 
 /***/ }),
 

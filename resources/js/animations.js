@@ -1,4 +1,4 @@
-// Observer one
+// #### First Observer ####
 const observerOne = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
@@ -10,7 +10,7 @@ const observerOne = new IntersectionObserver((entries) => {
 
 observerOne.observe(document.querySelector(".title-slider"));
 
-// Observer two
+// #### Second Observer ####
 const observerTwo = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
@@ -22,7 +22,7 @@ const observerTwo = new IntersectionObserver((entries) => {
 
 observerTwo.observe(document.querySelector(".title-slider.two"));
 
-// Observer three
+// #### Third Observer ####
 const observerThree = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
@@ -33,3 +33,15 @@ const observerThree = new IntersectionObserver((entries) => {
 });
 
 observerThree.observe(document.querySelector(".title-slider.three"));
+
+// #### Footer Observer ####
+const footerObserver = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("animate");
+      return;
+    }
+  });
+});
+
+footerObserver.observe(document.querySelector(".title-slider.footer"));

@@ -3,7 +3,7 @@
         <div class="row align-items-center">
             <div class="col-12 text-center"><!-- moet col-md-3 col-10 zijn -->
                 <div class="branding">
-                    <h3><a href="/">Jelle Stekelenburg<span class="highlight">.</span></a></h3>
+                    <h3 class="title-slider active dark"><a href="/">Jelle Stekelenburg<span class="punt">.</span></a></h3>
                 </div>
             </div>
             <!-- <div class="col-md-9 col-2">

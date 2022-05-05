@@ -50,7 +50,7 @@ p,
   }
 }
 
-h2 .punt {
+.punt {
   position: relative;
   animation: up-down 1.5s infinite;
 }
@@ -76,7 +76,8 @@ h2 .punt {
 }
 .title-slider.animate,
 .title-slider.animate.two,
-.title-slider.animate.three {
+.title-slider.animate.three,
+.title-slider.static {
   animation-delay: 0.5s;
   animation: title-slider__text 1.75s;
   animation-fill-mode: forwards;
@@ -89,9 +90,13 @@ h2 .punt {
   left: -100%;
   background-color: $main;
 }
+.title-slider.dark::before {
+  background-color: #333 !important;
+}
 .title-slider.animate::before,
 .title-slider.animate.two::before,
-.title-slider.animate.three::before {
+.title-slider.animate.three::before,
+.title-slider.static::before {
   animation-delay: 0.5s;
   animation: title-slider__before 1.75s;
   animation-fill-mode: forwards;
