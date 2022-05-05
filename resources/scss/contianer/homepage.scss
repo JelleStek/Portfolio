@@ -330,8 +330,8 @@ body.home {
       z-index: 1;
       filter: drop-shadow(0 0 15px rgba(0, 0, 0, 0.2));
       transform: translate(40%, -50%) scale(1) rotate(360deg) !important;
-      @media (max-width: 1000px) {
-        opacity: 0.3;
+      @media (max-width: 991px) {
+        z-index: -1;
       }
     }
   }

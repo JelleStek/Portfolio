@@ -18,8 +18,8 @@
       <div class="col-lg-3 col-md-6">
         <div class="content">
           <ul>
-            <li><a href="">Github</a></li>
-            <li><a href="">Linkedin</a></li>
+            <li><a target="blank" href="https://github.com/JelleStek">Github</a></li>
+            <li><a target="blank" href="https://www.linkedin.com/in/jelle-stekelenburg/">Linkedin</a></li>
           </ul>
         </div>
       </div>

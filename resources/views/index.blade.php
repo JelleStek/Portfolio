@@ -172,7 +172,7 @@
                         <div class="mt-30"></div>
                         <h4>Project starten?</h4>
                         <p>Tijd voor iets nieuws? vraag een vrijblijvende offerte aan via nwave of kom in contact!</p>
-                        <a href="https://nwave.nl" class="btn mt-10">Naar nwave</a>
+                        <a href="https://nwave.nl" class="btn mt-10 after-lg-mb-30">Naar nwave</a>
                     </div>
                 </div>
                 <div class="col-lg-6 offset-lg-2 position-relative">

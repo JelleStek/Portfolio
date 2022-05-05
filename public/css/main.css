@@ -244,6 +244,11 @@ img.box-image {
   padding: 0;
 }
 
+@media only screen and (max-width: 991px) {
+  .after-lg-mb-30 {
+    margin-bottom: 30px;
+  }
+}
 @-webkit-keyframes fade {
   0% {
     opacity: 0;
@@ -257,7 +262,6 @@ img.box-image {
     bottom: 20px;
   }
 }
-
 @keyframes fade {
   0% {
     opacity: 0;
@@ -416,6 +420,21 @@ p,
   h1,
 .h1 {
     font-size: 2.3rem;
+  }
+
+  h2,
+.h2 {
+    font-size: 2.1rem;
+  }
+
+  h3,
+.h3 {
+    font-size: 1.9rem;
+  }
+
+  h4,
+.h4 {
+    font-size: 1.7rem;
   }
 }
 .punt {
@@ -626,7 +645,7 @@ header#header .row {
 header#header .branding h3 {
   margin: 0 !important;
   color: #333;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   font-weight: 700;
 }
 @media only screen and (max-width: 950px) {
@@ -1117,9 +1136,9 @@ body.home section.contact .behind-animation {
   filter: drop-shadow(0 0 15px rgba(0, 0, 0, 0.2));
   transform: translate(40%, -50%) scale(1) rotate(360deg) !important;
 }
-@media (max-width: 1000px) {
+@media (max-width: 991px) {
   body.home section.contact .behind-animation {
-    opacity: 0.3;
+    z-index: -1;
   }
 }
 
