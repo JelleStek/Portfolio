@@ -11,7 +11,7 @@
             <ul>
                 <li><p>Front-end webontwikkelaar</p></li>
                 <li><p>Schagen, Nederland</p></li>
-                <li><a class="smaller" href="">Download mijn CV</a></li>
+                <li><a class="smaller" href="{{asset('/images/global/cv-JelleStekelenburg.pdf')}}" download>Download mijn CV</a></li>
             </ul>
           </div>
       </div>
