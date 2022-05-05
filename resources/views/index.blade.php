@@ -168,7 +168,7 @@
                     <div class="contact__container">
                         <h4>Mij een bericht sturen?</h4>
                         <p>Contact opnemen is gemakkelijk en veilig, druk op de onderstaande klop om naar het contact formulier te gaan.</p>
-                        <a href="" class="btn mt-10">Neem contact op</a>
+                        <a href="https://contactjellestek.nl/" class="btn mt-10">Neem contact op</a>
                         <div class="mt-30"></div>
                         <h4>Project starten?</h4>
                         <p>Tijd voor iets nieuws? vraag een vrijblijvende offerte aan via nwave of kom in contact!</p>
