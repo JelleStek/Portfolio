@@ -18,6 +18,10 @@ header#header {
       color: #333;
       font-size: 1.4rem;
       font-weight: 700;
+
+      a {
+        animation: invisable_first 1.5s;
+      }
     }
 
     @media only screen and (max-width: 950px) {
@@ -41,7 +45,6 @@ header#header {
   h3,
   a {
     color: #333;
-    animation: invisable_first 1.5s;
   }
 
   .menu {
@@ -81,7 +84,7 @@ header#header {
 
         a {
           text-decoration: none;
-          color: #fff;
+          color: #333;
         }
 
         &.active::after {

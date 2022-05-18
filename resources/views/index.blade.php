@@ -5,16 +5,6 @@
     <section class="hero">
         <div class="container">
             <div class="row justify-content-center">
-                <!-- <div class="col-lg-9 col-12 text-center">
-                    <div class="hero-title"><h2 class="h1">Hoi! Ik ben <span class="space"></span></h2>
-                        <h1>Jelle Stekelenburg,</h1><span class="space"></span>
-                        <h2 class="h1"> een developer in de Amsterdam regio</h2></div>
-                    <p>Ik ben een Front-end developer met 4 jaar ervaring.</p>
-
-                    <div class="box-image">
-                        <img src="{{asset('/images/homepage/hero.jpg')}}" alt="nwave website">
-                    </div>
-                </div> -->
                 <div class="col-lg-9 col-12 hide-mobile">
                     <div class="holder">
                         <div class="browser">
