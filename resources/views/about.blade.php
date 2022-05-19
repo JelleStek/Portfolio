@@ -7,9 +7,10 @@
             <div class="row align-items-center">
                 <div class="col-md-6 col-12">
                     <div class="sub-hero__fade">
-                        <h1>Wie ben ik?</h1>
-                        <h1>Wat doe ik?</h1>
-                        <h1>Wat kan ik?</h1>
+                        <h1 class="hidden">about</h1>
+                        <h2 class="large">Wie ben ik?</h2>
+                        <h2 class="large">Wat doe ik?</h2>
+                        <h2 class="large">Wat kan ik?</h2>
                     </div>
                 </div>
             </div>

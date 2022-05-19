@@ -34,7 +34,9 @@ main {
 main {
   overflow-y: hidden !important;
 }
-
+.hidden {
+  display: none !important;
+}
 [v-cloak] {
   display: none;
 }

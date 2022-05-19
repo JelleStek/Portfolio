@@ -46,7 +46,7 @@
             <div class="row justify-content-center">
                 <div class="col-9 text-center">
                     <h5 class="uppercase">Wat doe ik?</h5>
-                    <h2 class="title-slider">Mijn main skills<span class="punt">.</span></h2>
+                    <div class="title-slider"><h2>Mijn main skills<span class="punt">.</span></h2></div>
                 </div>
                 <div class="col-9 text-center">
                     <div class="intro-text">

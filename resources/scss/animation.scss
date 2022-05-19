@@ -1,3 +1,4 @@
+// ############# FADE ANIMATION ############# //
 @keyframes fade {
   0% {
     opacity: 0;
@@ -11,6 +12,7 @@
     bottom: 20px;
   }
 }
+// ############# MAIN PAGE HERO ANIMATION ############# //
 @keyframes hero-background {
   0% {
     transform: rotate(0deg);
@@ -19,6 +21,7 @@
     transform: rotate(360deg);
   }
 }
+// ############# TITLE SLIDER ############# //
 @keyframes title-slider__text {
   0% {
     color: transparent;
@@ -33,6 +36,7 @@
     color: inherit;
   }
 }
+// ############# TITLE SLIDER ############# //
 @keyframes title-slider__before {
   0% {
     left: -100%;
@@ -47,6 +51,7 @@
     left: 100%;
   }
 }
+// #############  MAINLY FOR NAV OR OTHER ITEMS THAT NEED TO BE HIDDEN FOR A WHILE ############# //
 @keyframes invisable_first {
   0% {
     color: transparent;
@@ -58,3 +63,12 @@
     color: #333;
   }
 }
+// ############# ABOUT SUB-HERO ANIMATION ############# //
+@keyframes about_subhero {
+  0% {
+    opacity: 0;
+    }
+    70% {
+
+    }
+  }
