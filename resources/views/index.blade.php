@@ -126,7 +126,7 @@
                     <div class="col-12">
                         <div class="portfolio__grid">
 
-                            <a href="">
+                            <a href="https://muiderslot.nl/">
                                 <div class="portfolio__item muiderslot" data style="background-image: url({{asset('/images/portfolio/muiderslot_background.jpg')}}) ">
                                         <div class="__title">
                                             <h4>Muiderslot</h4>
@@ -135,7 +135,7 @@
                                 </div>
                             </a>
 
-                            <a href="">
+                            <a href="https://bluetravel.nl/">
                                 <div class="portfolio__item muiderslot" data style="background-image: url({{asset('/images/portfolio/bluetravel_background.jpg')}}) ">
                                     <div class="__title">
                                         <h4>BLUEtravel</h4>
@@ -144,7 +144,7 @@
                                 </div>
                             </a>
 
-                            <a href="">
+                            <a href="https://ianremeijsen.nl/">
                                 <div class="portfolio__item muiderslot" style="background-image: url({{asset('/images/portfolio/ian_background.jpg')}}) ">
                                     <div class="__title">
                                     <h4>Ian<span style="margin-left:13px"></span>Remeijsen</h4>
