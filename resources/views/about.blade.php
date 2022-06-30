@@ -13,6 +13,11 @@
                         <h2 class="large">Wat kan ik?</h2>
                     </div>
                 </div>
+                <div class="col-md-6 col-rm-md">
+                    <div class="content">
+                        <img src="{{asset('images/about/hero.jpg')}}" alt="">
+                    </div>
+                </div>
             </div>
         </div>
     </section>

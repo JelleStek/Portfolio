@@ -21,8 +21,9 @@
                             <div class="__body">
                                 <div class="content">
                                     <div class="hero-title"><h3 class="h1">Hoi! Ik ben <span class="space"></span></h3>
-                                    <h1>Jelle Stekelenburg.</h1><span class="space"></span>
-                                    <h3 class="h1"> Een front-end developer in regio Amsterdam <span class="punt">.</span> </h3></div>
+                                        <h1>Jelle Stekelenburg.</h1><span class="space"></span>
+                                        <h3 class="h1"> Een front-end developer in regio Amsterdam <span
+                                                    class="punt">.</span></h3></div>
                                 </div>
                                 <img src="{{asset('/images/homepage/slide_3.jpg')}}" alt="">
                                 <img src="{{asset('/images/homepage/slide_2.jpg')}}" alt="">
@@ -34,8 +35,8 @@
                 </div>
                 <div class="col-12 show-mobile">
                     <div class="hero-title"><h3 class="h1">Hoi! Ik ben <span class="space"></span></h3>
-                    <h1>Jelle Stekelenburg,</h1><span class="space"></span>
-                    <h3 class="h1"> een developer in de Amsterdam regio</h3></div>
+                        <h1>Jelle Stekelenburg,</h1><span class="space"></span>
+                        <h3 class="h1"> een developer in de Amsterdam regio</h3></div>
                     <p>Ik ben een Front-end developer met 4 jaar ervaring.</p>
                 </div>
             </div>
@@ -60,7 +61,8 @@
                     <div class="image-container">
                         <div class="blur __one">
                             <img class="box-image" src="{{asset('/images/homepage/css.jpg')}}" alt="Person programming">
-                            <img class="behind-animation" src="/images/global/green_png.png" alt="Weird item going around">
+                            <img class="behind-animation" src="/images/global/green_png.png"
+                                 alt="Weird item going around">
                         </div>
                     </div>
                 </div>
@@ -68,10 +70,10 @@
                     <div class="content">
                         <p class="mini-title">Styling</p>
                         <h3>css & sass</h3>
-                        <p>Ik heb al meer dan 3 jaar ervaring met front-end development waaronder 1,5 jaar binnen
-                            het bedrijfsleven. Via designs kan ik alles pixel perfect namaken op de beste manier
-                            mogelijk. Binnen de front-end kant kijk ik vaak naar hoe iets effect kan hebben of de SEO en
-                            zorg ervoor dat alles soepel werkt.</p>
+                        <p>Ik heb meer dan 4 jaar ervaring binnen het maken en onderhouden van websites als front-end
+                            developer, diverse klanten hebben hierdoor gebruiksvriendelijke en moderne websites kunnen
+                            gebruiken om hun bedrijf beter te laten presteren en een goede uitstraling te geven op het
+                            internet. Ik kan elk ontwerp via de juiste manier stylen via css of sass.</p>
                     </div>
                 </div>
             </div>
@@ -90,8 +92,10 @@
                 <div class="col-lg-6 position-relative">
                     <div class="image-container">
                         <div class="blur __two">
-                            <img class="box-image blur __two" src="{{asset('images/homepage/js.jpg')}}" alt="Javascript code">
-                            <img class="behind-animation reverse" src="{{asset('/images/global/blue_png.png')}}" alt="Old head">
+                            <img class="box-image blur __two" src="{{asset('images/homepage/js.jpg')}}"
+                                 alt="Javascript code">
+                            <img class="behind-animation reverse" src="{{asset('/images/global/blue_png.png')}}"
+                                 alt="Old head">
                         </div>
                     </div>
                 </div>
@@ -117,16 +121,18 @@
                         <div class="portfolio__grid">
 
                             <a href="">
-                                <div class="portfolio__item muiderslot" data style="background-image: url({{asset('/images/portfolio/muiderslot_background.jpg')}}) ">
-                                        <div class="__title">
-                                            <h4>Muiderslot</h4>
-                                        </div>
-                                        <img src="{{asset('/images/portfolio/muiderslot.png')}}" alt="">
+                                <div class="portfolio__item muiderslot" data
+                                     style="background-image: url({{asset('/images/portfolio/muiderslot_background.jpg')}}) ">
+                                    <div class="__title">
+                                        <h4>Muiderslot</h4>
+                                    </div>
+                                    <img src="{{asset('/images/portfolio/muiderslot.png')}}" alt="">
                                 </div>
                             </a>
 
                             <a href="">
-                                <div class="portfolio__item muiderslot" data style="background-image: url({{asset('/images/portfolio/bluetravel_background.jpg')}}) ">
+                                <div class="portfolio__item muiderslot" data
+                                     style="background-image: url({{asset('/images/portfolio/bluetravel_background.jpg')}}) ">
                                     <div class="__title">
                                         <h4>BLUEtravel</h4>
                                     </div>
@@ -135,15 +141,16 @@
                             </a>
 
                             <a href="">
-                                <div class="portfolio__item muiderslot" style="background-image: url({{asset('/images/portfolio/ian_background.jpg')}}) ">
+                                <div class="portfolio__item muiderslot"
+                                     style="background-image: url({{asset('/images/portfolio/ian_background.jpg')}}) ">
                                     <div class="__title">
-                                    <h4>Ian<span style="margin-left:13px"></span>Remeijsen</h4>
+                                        <h4>Ian<span style="margin-left:13px"></span>Remeijsen</h4>
                                     </div>
                                     <img src="{{asset('/images/portfolio/ian.png')}}" alt="">
                                 </div>
                             </a>
 
-                        </div>    
+                        </div>
                     </div>
                 </div>
             </div>
@@ -151,17 +158,18 @@
 
     <section class="contact">
         <div class="container">
-        
+
             <div class="row align-items-center">
                 <div class="col-lg-4">
-                <h2 class="mb-30 title-slider three">Neem contact op<span class="punt">.</span></h2>
+                    <h2 class="mb-30 title-slider three">Neem contact op<span class="punt">.</span></h2>
                     <div class="contact__container">
                         <h4>Mij een bericht sturen?</h4>
-                        <p>Contact opnemen is gemakkelijk en veilig, druk op de onderstaande klop om naar het contact formulier te gaan.</p>
+                        <p>Contact opnemen is gemakkelijk en veilig, druk op de onderstaande klop om naar het contact
+                            formulier te gaan.</p>
                         <a href="https://contactjellestek.nl/" class="btn mt-10">Neem contact op</a>
                         <div class="mt-30"></div>
-                        <h4>Project starten?</h4>
-                        <p>Tijd voor iets nieuws? vraag een vrijblijvende offerte aan via nwave of kom in contact!</p>
+                        <h4>Online realisatie nodig?</h4>
+                        <p>Tijd voor iets nieuws? vraag een vrijblijvende offerte aan via nwave en kom in contact!</p>
                         <a href="https://nwave.nl" class="btn mt-10 after-lg-mb-30">Naar nwave</a>
                     </div>
                 </div>
@@ -174,4 +182,4 @@
     </section>
 
 
-    @endsection
+@endsection

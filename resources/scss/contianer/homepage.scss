@@ -20,7 +20,7 @@ body.home {
     img.back__slide {
       position: absolute;
       z-index: 0;
-      top: 0;
+      top: 35px;
       left: -100%;
       width: 100%;
       height: auto;
@@ -58,7 +58,7 @@ body.home {
       .__nav {
         width: 100%;
         background: lightgray;
-        padding: 12px 5px;
+        padding: 12px 15px;
         overflow: hidden;
 
         .flex-grid {
@@ -67,10 +67,12 @@ body.home {
 
           span {
             display: block;
+            cursor: pointer;
             width: 12px;
             height: 12px;
             border-radius: 50%;
             margin-right: 7px;
+            transition: filter .3s;
 
             &:nth-of-type(1) {
               background: #dd4f4c;
@@ -80,6 +82,9 @@ body.home {
             }
             &:nth-of-type(3) {
               background: #2bc55c;
+            }
+            &:hover {
+              filter: grayscale(.5);
             }
           }
           .tab {

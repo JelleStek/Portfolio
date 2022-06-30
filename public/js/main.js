@@ -2099,7 +2099,13 @@ var footerObserver = new IntersectionObserver(function (entries) {
     }
   });
 });
-footerObserver.observe(document.querySelector(".title-slider.footer"));
+footerObserver.observe(document.querySelector(".title-slider.footer")); // #### About hero animation
+
+var el = document.querySelector("#about_hero_image");
+el.addEventListener("mousemove", function (e) {
+  el.style.backgroundPositionX = -e.offsetX + "px";
+  el.style.backgroundPositionY = -e.offsetY + "px";
+});
 
 /***/ }),
 
